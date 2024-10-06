@@ -1,0 +1,13 @@
+﻿using UrbanFarming.Domain.Interfaces.Services;
+using UrbanFarming.Service.AppService;
+
+namespace UrbanFarming.IoC.Modules
+{
+    public class ServiceModule
+    {
+        public static void InjectDependencies(IServiceCollection services)
+        {
+            services.AddTransient<ILoginService, LoginService>();
+        }
+    }
+}

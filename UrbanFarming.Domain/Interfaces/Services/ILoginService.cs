@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UrbanFarming.Domain.Interfaces.Services
 {
-    public class ILoginService
+    public interface ILoginService
     {
     }
 }

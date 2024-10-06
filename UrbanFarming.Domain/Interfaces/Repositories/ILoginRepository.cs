@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UrbanFarming.Domain.Interfaces
+namespace UrbanFarming.Domain.Interfaces.Repositories
 {
-    public class ILoginRepository
+    public interface ILoginRepository
     {
     }
 }

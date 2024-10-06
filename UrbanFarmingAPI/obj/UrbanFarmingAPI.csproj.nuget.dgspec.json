@@ -176,7 +176,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj": {
+                "projectPath": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using ProjetoModelo.Data.Context;
-using ProjetoModelo.Middleware;
-using ProjetoModeloApi.IoC;
+using UrbanFarming.Data.Context;
+using UrbanFarming.IoC;
 using System;
+using UrbanFarming.Data.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +13,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<HPEContext>(opt =>
+builder.Services.AddDbContext<UrbanContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("Conn"));
     opt.UseLazyLoadingProxies();

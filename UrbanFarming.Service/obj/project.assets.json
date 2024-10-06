@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "UrbanFarming.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/UrbanFarming.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UrbanFarming.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "UrbanFarming.Domain/1.0.0": {
+      "type": "project",
+      "path": "../UrbanFarming.Domain/UrbanFarming.Domain.csproj",
+      "msbuildProject": "../UrbanFarming.Domain/UrbanFarming.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "UrbanFarming.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\vynic\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj": {
+              "projectPath": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

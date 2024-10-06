@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using UrbanFarming.Data.Context;
+using UrbanFarming.Domain.Interfaces.Repositories;
 
 namespace UrbanFarming.Data.Repositories
 {
-    internal class LoginRepository
+    public class LoginRepository : ILoginRepository
     {
+        public LoginRepository(UrbanContext context)
+        {
+
+        }
     }
 }

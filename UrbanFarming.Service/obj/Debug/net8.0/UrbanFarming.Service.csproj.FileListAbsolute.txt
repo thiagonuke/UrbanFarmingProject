@@ -10,3 +10,7 @@ C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.
 C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\refint\UrbanFarming.Service.dll
 C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.pdb
 C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\ref\UrbanFarming.Service.dll
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Domain.dll
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Domain.pdb
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.csproj.AssemblyReference.cache
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFar.A40D540A.Up2Date

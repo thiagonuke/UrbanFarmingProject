@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "UrbanFarming.Service/1.0.0": {
+        "dependencies": {
+          "UrbanFarming.Domain": "1.0.0"
+        },
         "runtime": {
           "UrbanFarming.Service.dll": {}
+        }
+      },
+      "UrbanFarming.Domain/1.0.0": {
+        "runtime": {
+          "UrbanFarming.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "UrbanFarming.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UrbanFarming.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
