@@ -1,0 +1,12 @@
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Service.deps.json
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Service.dll
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Service.pdb
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.AssemblyInfoInputs.cache
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.AssemblyInfo.cs
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.csproj.CoreCompileInputs.cache
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.sourcelink.json
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.dll
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\refint\UrbanFarming.Service.dll
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.pdb
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\ref\UrbanFarming.Service.dll

@@ -8,7 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0-rc.1.24451.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="9.0.0-rc.1.24451.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0-rc.1.24451.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UrbanFarming.Data\UrbanFarming.Data.csproj" />
+    <ProjectReference Include="..\UrbanFarming.Domain\UrbanFarming.Domain.csproj" />
+    <ProjectReference Include="..\UrbanFarming.Service\UrbanFarming.Service.csproj" />
   </ItemGroup>
 
 </Project>

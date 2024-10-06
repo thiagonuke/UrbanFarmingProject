@@ -31,3 +31,14 @@ E:\Projeto\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\refint\UrbanFarm
 E:\Projeto\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.pdb
 E:\Projeto\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.genruntimeconfig.cache
 E:\Projeto\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\ref\UrbanFarmingAPI.dll
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.csproj.AssemblyReference.cache
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.AssemblyInfoInputs.cache
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.AssemblyInfo.cs
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.csproj.CoreCompileInputs.cache
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.sourcelink.json
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.dll
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\refint\UrbanFarmingAPI.dll
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.pdb

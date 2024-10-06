@@ -1,0 +1,16 @@
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Data\bin\Debug\net8.0\UrbanFarming.Data.deps.json
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Data\bin\Debug\net8.0\UrbanFarming.Data.dll
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Data\bin\Debug\net8.0\UrbanFarming.Data.pdb
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Data\bin\Debug\net8.0\UrbanFarming.Domain.dll
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Data\bin\Debug\net8.0\UrbanFarming.Domain.pdb
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.csproj.AssemblyReference.cache
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.AssemblyInfoInputs.cache
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.AssemblyInfo.cs
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.csproj.CoreCompileInputs.cache
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.sourcelink.json
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFar.605C4CD5.Up2Date
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.dll
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\refint\UrbanFarming.Data.dll
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.pdb
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\ref\UrbanFarming.Data.dll
