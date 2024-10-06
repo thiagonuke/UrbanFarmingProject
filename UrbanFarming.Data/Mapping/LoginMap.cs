@@ -8,22 +8,22 @@ namespace UrbanFarming.Data.Mapping
         public static void Map(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Login>()
-                .ToTable("TB_MIT_BRINDE_LOG_ACESS");
+                .ToTable("Login");
 
             modelBuilder.Entity<Login>()
                 .HasKey(x => x.Id);
 
             modelBuilder.Entity<Login>()
                 .Property(x => x.Email)
-                .HasColumnName("EMAIL");
+                .HasColumnName("Email");
 
             modelBuilder.Entity<Login>()
                 .Property(x => x.Nome)
-                .HasColumnName("SENHA");
+                .HasColumnName("Senha");
 
             modelBuilder.Entity<Login>()
                 .Property(x => x.Senha)
-                .HasColumnName("NOME");
+                .HasColumnName("Nome");
         }
     }
 }

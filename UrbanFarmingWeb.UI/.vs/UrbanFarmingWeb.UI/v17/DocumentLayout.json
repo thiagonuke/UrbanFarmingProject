@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5CEF75B8-F4E5-48D8-AD79-49BD7D78BBA9}|..\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarmingapi\\ioc\\modules\\repositorymodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF2B155E-87B1-4B27-93A5-0459715DCB63}|..\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarming.domain\\classes\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{531C74E4-B078-47AE-AE18-DBD4CD276E44}|..\\UrbanFarming.Data\\UrbanFarming.Data.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarming.data\\repositories\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -12,69 +12,7 @@
       "AbsoluteMoniker": "D:0:0:{5652DA5B-4846-403E-B3B0-9591FBF577A6}|..\\UrbanFarming.Service\\UrbanFarming.Service.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarming.service\\appservice\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CEF75B8-F4E5-48D8-AD79-49BD7D78BBA9}|..\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarmingapi\\ioc\\modules\\servicemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CEF75B8-F4E5-48D8-AD79-49BD7D78BBA9}|..\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarmingapi\\ioc\\bootstrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CEF75B8-F4E5-48D8-AD79-49BD7D78BBA9}|..\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarmingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF2B155E-87B1-4B27-93A5-0459715DCB63}|..\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarming.domain\\classes\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF2B155E-87B1-4B27-93A5-0459715DCB63}|..\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarming.domain\\interfaces\\services\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF2B155E-87B1-4B27-93A5-0459715DCB63}|..\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarming.domain\\interfaces\\repositories\\iloginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF2B155E-87B1-4B27-93A5-0459715DCB63}|..\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarming.domain\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C226B9F8-8240-4487-90F9-A07EE3A65BFA}|UrbanFarmingWeb.UI.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarmingweb.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C226B9F8-8240-4487-90F9-A07EE3A65BFA}|UrbanFarmingWeb.UI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{531C74E4-B078-47AE-AE18-DBD4CD276E44}|..\\UrbanFarming.Data\\UrbanFarming.Data.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarming.data\\context\\urbancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{531C74E4-B078-47AE-AE18-DBD4CD276E44}|..\\UrbanFarming.Data\\UrbanFarming.Data.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarming.data\\mapping\\loginmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5CEF75B8-F4E5-48D8-AD79-49BD7D78BBA9}|..\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarmingapi\\controllers\\segurancacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CEF75B8-F4E5-48D8-AD79-49BD7D78BBA9}|..\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarmingapi\\urbanfarmingapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C226B9F8-8240-4487-90F9-A07EE3A65BFA}|UrbanFarmingWeb.UI.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarmingweb.ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C226B9F8-8240-4487-90F9-A07EE3A65BFA}|UrbanFarmingWeb.UI.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C226B9F8-8240-4487-90F9-A07EE3A65BFA}|UrbanFarmingWeb.UI.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarmingweb.ui\\controllers\\segurancacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C226B9F8-8240-4487-90F9-A07EE3A65BFA}|UrbanFarmingWeb.UI.csproj|solutionrelative:controllers\\segurancacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C226B9F8-8240-4487-90F9-A07EE3A65BFA}|UrbanFarmingWeb.UI.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarmingweb.ui\\request\\requestapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C226B9F8-8240-4487-90F9-A07EE3A65BFA}|UrbanFarmingWeb.UI.csproj|solutionrelative:request\\requestapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C226B9F8-8240-4487-90F9-A07EE3A65BFA}|UrbanFarmingWeb.UI.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarmingweb.ui\\wwwroot\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C226B9F8-8240-4487-90F9-A07EE3A65BFA}|UrbanFarmingWeb.UI.csproj|solutionrelative:wwwroot\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C226B9F8-8240-4487-90F9-A07EE3A65BFA}|UrbanFarmingWeb.UI.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarmingweb.ui\\urbanfarmingweb.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C226B9F8-8240-4487-90F9-A07EE3A65BFA}|UrbanFarmingWeb.UI.csproj|solutionrelative:urbanfarmingweb.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C226B9F8-8240-4487-90F9-A07EE3A65BFA}|UrbanFarmingWeb.UI.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarmingweb.ui\\util\\sessionextesions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C226B9F8-8240-4487-90F9-A07EE3A65BFA}|UrbanFarmingWeb.UI.csproj|solutionrelative:util\\sessionextesions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C226B9F8-8240-4487-90F9-A07EE3A65BFA}|UrbanFarmingWeb.UI.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarmingweb.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C226B9F8-8240-4487-90F9-A07EE3A65BFA}|UrbanFarmingWeb.UI.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -84,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -96,67 +34,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Bootstrapper.cs",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingAPI\\IoC\\Bootstrapper.cs",
-              "RelativeDocumentMoniker": "..\\UrbanFarmingAPI\\IoC\\Bootstrapper.cs",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingAPI\\IoC\\Bootstrapper.cs",
-              "RelativeToolTip": "..\\UrbanFarmingAPI\\IoC\\Bootstrapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T21:13:46.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ServiceModule.cs",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingAPI\\IoC\\Modules\\ServiceModule.cs",
-              "RelativeDocumentMoniker": "..\\UrbanFarmingAPI\\IoC\\Modules\\ServiceModule.cs",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingAPI\\IoC\\Modules\\ServiceModule.cs",
-              "RelativeToolTip": "..\\UrbanFarmingAPI\\IoC\\Modules\\ServiceModule.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T21:13:46.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RepositoryModule.cs",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingAPI\\IoC\\Modules\\RepositoryModule.cs",
-              "RelativeDocumentMoniker": "..\\UrbanFarmingAPI\\IoC\\Modules\\RepositoryModule.cs",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingAPI\\IoC\\Modules\\RepositoryModule.cs",
-              "RelativeToolTip": "..\\UrbanFarmingAPI\\IoC\\Modules\\RepositoryModule.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\Classes\\Login.cs",
+              "RelativeDocumentMoniker": "..\\UrbanFarming.Domain\\Classes\\Login.cs",
+              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\Classes\\Login.cs",
+              "RelativeToolTip": "..\\UrbanFarming.Domain\\Classes\\Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T21:12:43.172Z",
+              "WhenOpened": "2024-10-06T23:03:46.81Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ILoginService.cs",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\Interfaces\\Services\\ILoginService.cs",
-              "RelativeDocumentMoniker": "..\\UrbanFarming.Domain\\Interfaces\\Services\\ILoginService.cs",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\Interfaces\\Services\\ILoginService.cs",
-              "RelativeToolTip": "..\\UrbanFarming.Domain\\Interfaces\\Services\\ILoginService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAUAAAA",
+              "DocumentIndex": 1,
+              "Title": "LoginRepository.cs",
+              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Data\\Repositories\\LoginRepository.cs",
+              "RelativeDocumentMoniker": "..\\UrbanFarming.Data\\Repositories\\LoginRepository.cs",
+              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Data\\Repositories\\LoginRepository.cs*",
+              "RelativeToolTip": "..\\UrbanFarming.Data\\Repositories\\LoginRepository.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T21:07:55.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ILoginRepository.cs",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\Interfaces\\Repositories\\ILoginRepository.cs",
-              "RelativeDocumentMoniker": "..\\UrbanFarming.Domain\\Interfaces\\Repositories\\ILoginRepository.cs",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\Interfaces\\Repositories\\ILoginRepository.cs",
-              "RelativeToolTip": "..\\UrbanFarming.Domain\\Interfaces\\Repositories\\ILoginRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T21:04:05.647Z",
+              "WhenOpened": "2024-10-06T23:03:28.614Z",
               "EditorCaption": ""
             },
             {
@@ -167,217 +66,22 @@
               "RelativeDocumentMoniker": "..\\UrbanFarming.Service\\AppService\\LoginService.cs",
               "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Service\\AppService\\LoginService.cs",
               "RelativeToolTip": "..\\UrbanFarming.Service\\AppService\\LoginService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T21:03:22.023Z",
+              "WhenOpened": "2024-10-06T23:03:19.101Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingAPI\\Program.cs",
-              "RelativeDocumentMoniker": "..\\UrbanFarmingAPI\\Program.cs",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingAPI\\Program.cs",
-              "RelativeToolTip": "..\\UrbanFarmingAPI\\Program.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T20:56:50.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\Classes\\Login.cs",
-              "RelativeDocumentMoniker": "..\\UrbanFarming.Domain\\Classes\\Login.cs",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\Classes\\Login.cs",
-              "RelativeToolTip": "..\\UrbanFarming.Domain\\Classes\\Login.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T20:42:56.43Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\Classes\\User.cs",
-              "RelativeDocumentMoniker": "..\\UrbanFarming.Domain\\Classes\\User.cs",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\Classes\\User.cs",
-              "RelativeToolTip": "..\\UrbanFarming.Domain\\Classes\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T20:42:30.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginRepository.cs",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Data\\Repositories\\LoginRepository.cs",
-              "RelativeDocumentMoniker": "..\\UrbanFarming.Data\\Repositories\\LoginRepository.cs",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Data\\Repositories\\LoginRepository.cs",
-              "RelativeToolTip": "..\\UrbanFarming.Data\\Repositories\\LoginRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T20:41:53.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LoginMap.cs",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Data\\Mapping\\LoginMap.cs",
-              "RelativeDocumentMoniker": "..\\UrbanFarming.Data\\Mapping\\LoginMap.cs",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Data\\Mapping\\LoginMap.cs",
-              "RelativeToolTip": "..\\UrbanFarming.Data\\Mapping\\LoginMap.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T20:41:30.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UrbanContext.cs",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Data\\Context\\UrbanContext.cs",
-              "RelativeDocumentMoniker": "..\\UrbanFarming.Data\\Context\\UrbanContext.cs",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Data\\Context\\UrbanContext.cs",
-              "RelativeToolTip": "..\\UrbanFarming.Data\\Context\\UrbanContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T20:41:05.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
               "Title": "SegurancaController.cs",
               "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingAPI\\Controllers\\SegurancaController.cs",
               "RelativeDocumentMoniker": "..\\UrbanFarmingAPI\\Controllers\\SegurancaController.cs",
               "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingAPI\\Controllers\\SegurancaController.cs",
               "RelativeToolTip": "..\\UrbanFarmingAPI\\Controllers\\SegurancaController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T20:39:04.922Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UrbanFarmingAPI",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj",
-              "RelativeDocumentMoniker": "..\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj",
-              "RelativeToolTip": "..\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-06T20:35:23.076Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UrbanFarmingWeb.UI.csproj",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\UrbanFarmingWeb.UI.csproj",
-              "RelativeDocumentMoniker": "UrbanFarmingWeb.UI.csproj",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\UrbanFarmingWeb.UI.csproj",
-              "RelativeToolTip": "UrbanFarmingWeb.UI.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-06T19:24:48.794Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAwwCwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T19:24:48.952Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SessionExtesions.cs",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\Util\\SessionExtesions.cs",
-              "RelativeDocumentMoniker": "Util\\SessionExtesions.cs",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\Util\\SessionExtesions.cs",
-              "RelativeToolTip": "Util\\SessionExtesions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T19:24:48.957Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "RequestAPI.cs",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\Request\\RequestAPI.cs",
-              "RelativeDocumentMoniker": "Request\\RequestAPI.cs",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\Request\\RequestAPI.cs",
-              "RelativeToolTip": "Request\\RequestAPI.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAWwA8AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T19:24:48.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SegurancaController.cs",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\Controllers\\SegurancaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SegurancaController.cs",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\Controllers\\SegurancaController.cs",
-              "RelativeToolTip": "Controllers\\SegurancaController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAABQwCAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T19:24:48.968Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "main.js",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\wwwroot\\js\\main.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\main.js",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\wwwroot\\js\\main.js",
-              "RelativeToolTip": "wwwroot\\js\\main.js",
-              "ViewState": "AQIAABkAAAAAAAAAAAAUwCoAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-06T19:24:48.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAI8AAAAAAAAAAAAAAK8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-06T19:24:48.98Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAgAAAAAAAAAAIBJwCYAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-06T19:24:48.984Z",
+              "WhenOpened": "2024-10-06T23:03:04.692Z",
               "EditorCaption": ""
             }
           ]

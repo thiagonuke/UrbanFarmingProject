@@ -36,7 +36,6 @@ C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\Urb
 C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.AssemblyInfoInputs.cache
 C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.AssemblyInfo.cs
 C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.csproj.CoreCompileInputs.cache
-C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.sourcelink.json
 C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.dll
@@ -123,3 +122,4 @@ C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\sco
 C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFar.ADA5800F.Up2Date
 C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.genruntimeconfig.cache
 C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\ref\UrbanFarmingAPI.dll
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingAPI\obj\Debug\net8.0\UrbanFarmingAPI.MvcApplicationPartsAssemblyInfo.cs

@@ -1,8 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using UrbanFarming.Data.Context;
-using UrbanFarming.IoC;
-using System;
-using UrbanFarming.Data.Context;
+using ProjetoModeloApi.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +17,7 @@ builder.Services.AddDbContext<UrbanContext>(opt =>
     opt.UseLazyLoadingProxies();
 });
 
-//builder.Services.StartRegisterServices();
+builder.Services.StartRegisterServices();
 
 builder.Services.AddCors(options =>
 {
