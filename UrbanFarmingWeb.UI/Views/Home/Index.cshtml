@@ -157,15 +157,17 @@
 
 		$.ajax({
 			url: './Seguranca/Login',
-			data: JSON.stringify({ usuario: $('#usuario').val().toString(), senha: $('#password-field').val().toString() }),
-			contentType: 'application/json; charset=utf-8', 
+			method: "POST", 
+			data: JSON.stringify({
+				Usuario: $('#usuario').val().toString(),
+				Senha: $('#password-field').val().toString()
+			}),
+			contentType: 'application/json; charset=utf-8',
 			success: function (response) {
-
-				///$('#resultado').html('Login bem-sucedido!'); 
+				//$('#resultado').html('Login bem-sucedido! ' + response);
 			},
 			error: function (xhr, status, error) {
-				
-				//$('#resultado').html('Erro: ' + xhr.responseText); 
+				//$('#resultado').html('Erro: ' + xhr.responseText);
 			}
 		});
 	});

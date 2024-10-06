@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace UrbanFarming.Domain.Classes
 {
-	public class Usuario
+	public class User
 	{
+		public int Id { get; set; }
+		public string? Usuario { get; set; }
+		public string? Senha { get; set; }
 	}
 }

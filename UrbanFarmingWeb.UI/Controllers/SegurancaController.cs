@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace UrbanFarmingWeb.UI.Controllers
 {
+	[Route("[controller]")]
 	public class SegurancaController : Controller
 	{
 		private readonly RequestAPI _request;
@@ -21,15 +22,16 @@ namespace UrbanFarmingWeb.UI.Controllers
 			return View();
 		}
 
-		public async Task<IActionResult> Login(string usuario, string senha)
+		[HttpPost("Login")]
+		public async Task<IActionResult> Login([FromBody] User dadosT)
 		{
 			string retorno = string.Empty;
 
-			var dados = await _request.EfetuarLogin(usuario, senha);
+			var dados = await _request.EfetuarLogin(dadosT.Usuario, dadosT.Senha);
 
 			if (dados != null) {
 
-				HttpContext.Session.Set<Usuario>("User", dados);
+				HttpContext.Session.Set<User>("User", dados);
 
 				retorno = "Success: Logado!";
 
