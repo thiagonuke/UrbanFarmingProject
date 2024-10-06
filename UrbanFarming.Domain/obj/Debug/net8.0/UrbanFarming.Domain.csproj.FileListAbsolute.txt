@@ -1,0 +1,12 @@
+E:\Projeto\UrbanFarmingProject\UrbanFarming.Domain\bin\Debug\net8.0\UrbanFarming.Domain.deps.json
+E:\Projeto\UrbanFarmingProject\UrbanFarming.Domain\bin\Debug\net8.0\UrbanFarming.Domain.dll
+E:\Projeto\UrbanFarmingProject\UrbanFarming.Domain\bin\Debug\net8.0\UrbanFarming.Domain.pdb
+E:\Projeto\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\UrbanFarming.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projeto\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\UrbanFarming.Domain.AssemblyInfoInputs.cache
+E:\Projeto\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\UrbanFarming.Domain.AssemblyInfo.cs
+E:\Projeto\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\UrbanFarming.Domain.csproj.CoreCompileInputs.cache
+E:\Projeto\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\UrbanFarming.Domain.sourcelink.json
+E:\Projeto\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\UrbanFarming.Domain.dll
+E:\Projeto\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\refint\UrbanFarming.Domain.dll
+E:\Projeto\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\UrbanFarming.Domain.pdb
+E:\Projeto\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\ref\UrbanFarming.Domain.dll
