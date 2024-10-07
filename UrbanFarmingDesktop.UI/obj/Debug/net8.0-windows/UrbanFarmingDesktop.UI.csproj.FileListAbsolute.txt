@@ -1,0 +1,17 @@
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\bin\Debug\net8.0-windows\UrbanFarmingDesktop.UI.exe
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\bin\Debug\net8.0-windows\UrbanFarmingDesktop.UI.deps.json
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\bin\Debug\net8.0-windows\UrbanFarmingDesktop.UI.runtimeconfig.json
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\bin\Debug\net8.0-windows\UrbanFarmingDesktop.UI.dll
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\bin\Debug\net8.0-windows\UrbanFarmingDesktop.UI.pdb
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.Form1.resources
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.csproj.GenerateResource.cache
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.AssemblyInfoInputs.cache
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.AssemblyInfo.cs
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.csproj.CoreCompileInputs.cache
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.sourcelink.json
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.dll
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\refint\UrbanFarmingDesktop.UI.dll
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.pdb
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.genruntimeconfig.cache
+C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\ref\UrbanFarmingDesktop.UI.dll

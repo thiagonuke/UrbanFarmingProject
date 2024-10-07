@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="AppService\" />
     <Folder Include="Request\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UrbanFarming.Domain\UrbanFarming.Domain.csproj" />
   </ItemGroup>
 
 </Project>
