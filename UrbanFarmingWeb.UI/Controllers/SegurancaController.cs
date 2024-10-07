@@ -27,9 +27,17 @@ namespace UrbanFarmingWeb.UI.Controllers
 		{
 			string retorno = string.Empty;
 
-			var dados = await _request.EfetuarLogin(dadosT.Usuario, dadosT.Senha);
+			var dados = await _request.EfetuarLogin(dadosT.Email, dadosT.Senha);
 
 			if (dados != null) {
+
+				dados = new User()
+				{
+					Id = 12,
+					Nome = "Thiago",
+					Email = "mthiag@gmail.com",
+					Senha = ""
+				};
 
 				HttpContext.Session.Set<User>("User", dados);
 
@@ -41,11 +49,10 @@ namespace UrbanFarmingWeb.UI.Controllers
 				retorno = "Usuario não encontrado!";
 			}
 
-
 			return Json(retorno);
 		}
 
-
+		private void Logout() => HttpContext.Session.Remove("User");
 		
 	}
  

@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets\\images\\bg.jpg"
     },
     {
+      "Id": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
       "Id": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },

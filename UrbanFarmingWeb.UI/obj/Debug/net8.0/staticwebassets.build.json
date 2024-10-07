@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QqIgXa3K8VctcqvPyl974qlMoZMaaIB0JJ5exVi6PjM=",
+  "Hash": "1HUko5qHt4kQQHZpuJYG9dZAAvo0qykjVyDgXKou+y0=",
   "Source": "UrbanFarmingWeb.UI",
   "BasePath": "_content/UrbanFarmingWeb.UI",
   "Mode": "Default",
@@ -281,6 +281,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\bg.jpg"
+    },
+    {
+      "Identity": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\wwwroot\\images\\logo.png",
+      "SourceId": "UrbanFarmingWeb.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\wwwroot\\",
+      "BasePath": "_content/UrbanFarmingWeb.UI",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
       "Identity": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\wwwroot\\js\\bootstrap.min.js",

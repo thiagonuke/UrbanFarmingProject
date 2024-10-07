@@ -1,35 +1,93 @@
-﻿<!DOCTYPE html>
+﻿<style>
+    /* Underline Effect*/
+    .nav-item {
+        position: relative;
+    }
+
+    .navbar-collapse ul li a.nav-link:before {
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: transparent;
+        content: '';
+        opacity: 0;
+        -ms-transition: opacity 0.3s, -webkit-transform 0.3s;
+        -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+        transition: opacity 0.3s, transform 0.3s;
+        -ms-transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+
+    .navbar-collapse ul li:hover a.nav-link:before {
+        opacity: 1;
+        -ms-transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        bottom: 0px;
+        background: #dd4343;
+    }
+
+    .dropdown-item:hover, .dropdown-item:focus {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #dd4343;
+    }
+
+    .dropdown-menu {
+        border: 0px;
+    }
+
+    body {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - UrbanFarmingWeb.UI  </title>
+    <title>UrbanFarmingWeb.UI  </title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/UrbanFarmingWeb.UI.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-       @*  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Urban Farming </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(44, 56, 64);">
+            <a class="navbar-brand" href="#"><img src="~/images/logo.png" width="100vw" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Compra de Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Cadastro de Fornecedores</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Pedidos</a>
+                    </li>
+                   
+                </ul>
             </div>
-        </nav> *@
-    </header>
+            <div class="col-md-1">
+
+            <h5 id="usuario-nav" class="text-white">
+                
+            </h5>
+
+            </div>
+        </nav>
+    </header>   
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -37,8 +95,8 @@
     </div>
 
     <footer class="footer text-muted">
-        <div class="container">
-            &copy; 2024 - UrbanFarmingWeb.UI - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <div class="container text-white">
+            &copy; 2024 - UrbanFarmingWeb.UI
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -47,3 +105,23 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+
+<script>
+    $(document).ready(function () {
+        $('#navbarDropdown').mouseenter(function () {
+            $('.dropdown-menu').slideToggle(300, "linear");
+        });
+
+        $('.dropdown-menu').mouseleave(function () {
+            $(this).slideToggle(300, "linear");
+        });
+
+        if (@ViewData["Nome"] != "") {
+            document.getElementById("usuario-nav").textContent = `Olá ${@ViewData["Nome"]}`
+
+        }
+
+    });
+   
+</script>

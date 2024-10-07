@@ -2,6 +2,9 @@
     ViewData["Title"] = "Home Page";
 }
 <style>
+	header {
+		display:none !important;
+	}
 
 	body {
 		overflow-x: hidden; 
@@ -97,7 +100,7 @@
 								<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 							</div>
 							<div class="form-group">
-								<button id="Login" class="form-control btn btn-primary submit px-3">Sign In</button>
+								<button id="Login" class="form-control btn btn-primary px-3">Sign In</button>
 							</div>
 							<div class="form-group d-md-flex">
 								<div class="w-50">
@@ -146,9 +149,6 @@
 </html>
 
 
-
-
-
 <script>
 
 
@@ -159,12 +159,12 @@
 			url: './Seguranca/Login',
 			method: "POST", 
 			data: JSON.stringify({
-				Usuario: $('#usuario').val().toString(),
+				Email: $('#usuario').val().toString(),
 				Senha: $('#password-field').val().toString()
 			}),
 			contentType: 'application/json; charset=utf-8',
 			success: function (response) {
-				//$('#resultado').html('Login bem-sucedido! ' + response);
+				window.location.href = "../Home/MenuHome"
 			},
 			error: function (xhr, status, error) {
 				//$('#resultado').html('Erro: ' + xhr.responseText);

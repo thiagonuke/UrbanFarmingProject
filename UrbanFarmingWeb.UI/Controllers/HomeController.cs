@@ -1,6 +1,9 @@
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using UrbanFarming.Domain.Classes;
 using UrbanFarmingWeb.UI.Models;
+using UrbanFarmingWeb.UI.Util;
 
 namespace UrbanFarmingWeb.UI.Controllers
 {
@@ -16,6 +19,16 @@ namespace UrbanFarmingWeb.UI.Controllers
         public IActionResult Index()
         {
             return View();
+        }    
+        
+        public IActionResult MenuHome()
+        {
+            if (HttpContext.Session.Get<User>("User") != null)
+            {
+                ViewData["Name"] = HttpContext.Session.Get<User>("User").Nome;
+            }
+
+            return View("../Menu/Index");
         }
 
         public IActionResult Privacy()
