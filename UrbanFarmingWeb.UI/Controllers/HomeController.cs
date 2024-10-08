@@ -18,14 +18,19 @@ namespace UrbanFarmingWeb.UI.Controllers
 
         public IActionResult Index()
         {
-            return View();
+
+            if (HttpContext.Session.Get<User>("USER") != null)
+            {
+                return View("../Menu/Index");
+            }
+                return View();
         }    
         
         public IActionResult MenuHome()
         {
-            if (HttpContext.Session.Get<User>("User") != null)
+            if (HttpContext.Session.Get<User>("USER") != null)
             {
-                ViewData["Name"] = HttpContext.Session.Get<User>("User").Nome;
+                ViewData["Name"] = HttpContext.Session.Get<User>("USER").Nome;
             }
 
             return View("../Menu/Index");

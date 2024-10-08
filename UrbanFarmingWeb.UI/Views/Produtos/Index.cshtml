@@ -1,0 +1,202 @@
+﻿<style>
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .product-card {
+        background-color: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .product-card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .product-card h2 {
+        font-size: 1.2rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .product-card p {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 15px;
+    }
+
+    button {
+        padding: 10px 15px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #218838;
+    }
+
+    .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    @@media (max-width: 768px) {
+        .product-grid {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+
+        .product-card {
+            padding: 10px;
+        }
+    }
+
+    @@media (max-width: 480px) {
+        .product-grid {
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .open-cart-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .cart {
+        width: 300px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        position: fixed;
+        top: 0;
+        right: -350px; /* Carrinho começa fora da tela */
+        height: 100vh;
+        transition: right 0.4s ease; /* Animação */
+    }
+
+        .cart.open {
+            right: 0; /* Quando aberto, o carrinho é mostrado */
+        }
+
+    .cart-items {
+        list-style: none;
+        padding: 0;
+    }
+
+        .cart-items li {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+    .total-price {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .checkout-btn {
+        margin-top: 20px;
+        padding: 10px;
+        width: 100%;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .close-cart-btn {
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        padding: 5px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<!doctype html>
+<html lang="en">
+<body style="background-color: seagreen;">
+    <button class="open-cart-btn ">Abrir Carrinho</button>
+    <section class="product-grid">
+        <div class="product-card shadow-lg">
+            <img src="https://www.shutterstock.com/image-photo/tomato-isolated-tomatoes-leaf-on-260nw-2274203591.jpg" alt="Tomate">
+            <h2>Tomate</h2>
+            <p>R$ 4.50</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+        <div class="product-card shadow-lg">
+            <img src="https://cdn.awsli.com.br/600x1000/1982/1982052/produto/174027508/53c931b15d.jpg" alt="Alface Americana">
+            <h2>Alface Americana</h2>
+            <p>R$ 3.00</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <aside class="cart">
+        <button class="close-cart-btn">X</button>
+        <h2>Carrinho</h2>
+        <ul class="cart-items">
+        </ul>
+        <p>Total: <span class="total-price">R$ 0.00</span></p>
+        <button class="checkout-btn">Finalizar Compra</button>
+    </aside>
+
+</body>
+
+</html>
+
+
+
+<script>
+    const cart = document.querySelector('.cart');
+    const openCartBtn = document.querySelector('.open-cart-btn');
+    const closeCartBtn = document.querySelector('.close-cart-btn');
+
+    openCartBtn.addEventListener('click', () => {
+        cart.classList.add('open');
+    });
+
+    closeCartBtn.addEventListener('click', () => {
+        cart.classList.remove('open');
+    });
+</script>

@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
+      "Id": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\wwwroot\\images\\logout.png",
+      "PackagePath": "staticwebassets\\images\\logout.png"
+    },
+    {
       "Id": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },

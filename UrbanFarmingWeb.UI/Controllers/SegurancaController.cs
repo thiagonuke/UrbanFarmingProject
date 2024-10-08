@@ -27,11 +27,9 @@ namespace UrbanFarmingWeb.UI.Controllers
 		{
 			string retorno = string.Empty;
 
-			var dados = await _request.EfetuarLogin(dadosT.Email, dadosT.Senha);
+			//var dados = await _request.EfetuarLogin(dadosT.Email, dadosT.Senha);
 
-			if (dados != null) {
-
-				dados = new User()
+			var dados = new User()
 				{
 					Id = 12,
 					Nome = "Thiago",
@@ -39,7 +37,10 @@ namespace UrbanFarmingWeb.UI.Controllers
 					Senha = ""
 				};
 
-				HttpContext.Session.Set<User>("User", dados);
+			if (dados != null) {
+
+
+				HttpContext.Session.Set<User>("USER", dados);
 
 				retorno = "Success: Logado!";
 
@@ -52,7 +53,8 @@ namespace UrbanFarmingWeb.UI.Controllers
 			return Json(retorno);
 		}
 
-		private void Logout() => HttpContext.Session.Remove("User");
+        [HttpGet("Logout")]
+        public void Logout() => HttpContext.Session.Remove("USER");
 		
 	}
  

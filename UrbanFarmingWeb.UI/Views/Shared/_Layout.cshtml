@@ -59,16 +59,16 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(44, 56, 64);">
-            <a class="navbar-brand" href="#"><img src="~/images/logo.png" width="100vw" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
+        <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-around" style="background-color: rgb(44, 56, 64);">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand" href="#"><img src="~/images/logo.png" width="100vw" /></a>
+           @*  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> *@
+
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Compra de Produtos</a>
+                        <a class="nav-link text-white" href="../Produtos/Index">Compra de Produtos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Cadastro de Fornecedores</a>
@@ -79,11 +79,19 @@
                    
                 </ul>
             </div>
-            <div class="col-md-1">
-
-            <h5 id="usuario-nav" class="text-white">
+            <div>
+                <div class="col-md-1">
                 
-            </h5>
+                <h5 id="usuario-nav" class="text-white">
+                
+                </h5>
+                    <a id="logout" style="cursor:pointer;">
+                        <h5 class="text-white">
+                                
+                            <img src="~/images/logout.png" width="50vw" /> 
+                        </h5>
+                    </a>
+                </div>
 
             </div>
         </nav>
@@ -94,8 +102,8 @@
         </main>
     </div>
 
-    <footer class="footer text-muted">
-        <div class="container text-white">
+    <footer class="footer text-muted d-flex justify-content-center">
+        <div class="container text-white d-flex justify-content-center">
             &copy; 2024 - UrbanFarmingWeb.UI
         </div>
     </footer>
@@ -116,12 +124,25 @@
         $('.dropdown-menu').mouseleave(function () {
             $(this).slideToggle(300, "linear");
         });
+        var name = `${"@ViewData["Nome"]"}`;
 
-        if (@ViewData["Nome"] != "") {
-            document.getElementById("usuario-nav").textContent = `Olá ${@ViewData["Nome"]}`
+         if (name != "") {
+            document.getElementById("usuario-nav").textContent = `Olá ${name}`
 
-        }
+         }
 
     });
+
+    $("#logout").on("click", function () { 
+        $.ajax({
+            url: '../Seguranca/Logout',
+            method:"GET",
+            success: function (response) {
+                window.location.href = "../"
+            }
+        });
+     
+    })
+    
    
 </script>

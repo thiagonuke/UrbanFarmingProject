@@ -11,5 +11,6 @@ namespace UrbanFarmingAPI.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id, [FromServices] ILoginService loginService)
             => Ok(await loginService.GetById(id));
+
     }
 }

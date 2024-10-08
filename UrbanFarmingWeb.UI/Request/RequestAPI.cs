@@ -13,7 +13,7 @@ namespace UrbanFarmingWeb.UI.Request
 		
 		}
 
-		public async Task<User> EfetuarLogin(string username, string password) => await _httpClient.GetAsync($"").Result.Content.ReadFromJsonAsync<User>();
+		public async Task<User> EfetuarLogin(string username, string password) => await _httpClient.GetAsync($"/api/Seguranca/").Result.Content.ReadFromJsonAsync<User>();
 
 	}
 }
