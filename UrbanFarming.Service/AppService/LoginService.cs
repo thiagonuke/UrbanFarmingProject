@@ -16,18 +16,6 @@ namespace UrbanFarming.Service.AppService
             _loginRepository = clienteRepository;
         }
 
-        public async Task<Login> GetById(int id)
-        {
-            var usuario = new Login();
-
-            usuario = await _loginRepository.GetById(id);
-
-            if (usuario == null)
-                throw new NotFoundException("Usuário não encontrado");
-
-            return usuario;
-        }
-
         public async Task<Login> GetByEmail(string email)
         {
             var usuario = await _loginRepository.GetByEmail(email);

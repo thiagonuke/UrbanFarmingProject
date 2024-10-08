@@ -9,10 +9,6 @@ namespace UrbanFarmingAPI.Controllers
     [ApiController]
     public class SegurancaController : ControllerBase
     {
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id, [FromServices] ILoginService loginService)
-            => Ok(await loginService.GetById(id));
-
         [HttpPost]
         public async Task<IActionResult> CadastrarUsuario(Login usuario, [FromServices] ILoginService loginService)
             => Ok(await loginService.CadastrarUsuario(usuario));
@@ -29,6 +25,5 @@ namespace UrbanFarmingAPI.Controllers
 
             return Ok(new { usuario, sucesso });
         }
-
     }
 }

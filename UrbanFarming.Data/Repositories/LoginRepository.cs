@@ -12,18 +12,6 @@ namespace UrbanFarming.Data.Repositories
         {
 
         }
-
-        public async Task<Login> GetById(int id)
-        {
-            try
-            {
-                return await _context.Login.FirstOrDefaultAsync(u => u.Id == id);
-            }
-            catch (Exception ex) 
-            {
-                throw new Exception($"Ocorreu um erro: {ex.Message}");
-            }
-        }
         
         public async Task<Login> GetByEmail(string email) 
         {
