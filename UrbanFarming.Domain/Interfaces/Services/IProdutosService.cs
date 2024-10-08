@@ -7,9 +7,9 @@ using UrbanFarming.Domain.Classes;
 
 namespace UrbanFarming.Domain.Interfaces.Services
 {
-    public interface ILoginService
+    public interface IProdutosService
     {
-        Task<bool> CadastrarUsuario(Login usuario);
-        Task<Login> Login(string email, string senha);
+        Task<bool> CadastrarUsuario(Produtos usuario);
+        Task<(Produtos usuario, bool sucesso)> Produtos(string email, string senha);
     }
 }

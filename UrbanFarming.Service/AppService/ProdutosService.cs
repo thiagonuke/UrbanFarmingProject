@@ -7,25 +7,25 @@ using UrbanFarming.Domain.Interfaces.Services;
 
 namespace UrbanFarming.Service.AppService
 {
-    public class LoginService : ILoginService
+    public class ProdutosService : IProdutosService
     {
-        private readonly ILoginRepository _loginRepository;
+        private readonly IProdutosRepository _ProdutosRepository;
 
-        public LoginService(ILoginRepository clienteRepository)
+        public ProdutosService(IProdutosRepository clienteRepository)
         {
-            _loginRepository = clienteRepository;
+            _ProdutosRepository = clienteRepository;
         }
 
-        public async Task<Login> GetByEmail(string email)
+        public async Task<Produtos> GetByEmail(string email)
         {
-            var usuario = await _loginRepository.GetByEmail(email);
+            var usuario = await _ProdutosRepository.GetByEmail(email);
 
             return usuario;
         }
 
-        public async Task<bool> PostUsuario(Login usuario)
+        public async Task<bool> PostUsuario(Produtos usuario)
         {
-            var sucesso = await _loginRepository.PostUsuario(usuario);
+            var sucesso = await _ProdutosRepository.PostUsuario(usuario);
 
             if (!sucesso)
                 throw new NotFoundException("Não foi possível cadastrar o usuário.");
@@ -33,7 +33,7 @@ namespace UrbanFarming.Service.AppService
             return sucesso;
         }
 
-        public async Task<bool> CadastrarUsuario(Login usuario)
+        public async Task<bool> CadastrarUsuario(Produtos usuario)
         {
             var cadastroExiste = await GetByEmail(usuario.Email);
 
@@ -45,17 +45,17 @@ namespace UrbanFarming.Service.AppService
             return await PostUsuario(usuario);
         }
 
-        public async Task<Login> Login(string email, string senha)
+        public async Task<(Produtos usuario, bool sucesso)> Produtos(string email, string senha)
         {
-            var usuario = await _loginRepository.GetByEmail(email);
+            var usuario = await _ProdutosRepository.GetByEmail(email);
 
             if (usuario == null)
-                return null;
+                return (null, false);
 
             if (!VerificaSenha(senha, usuario.Senha))
-                return null;
+                return (null, false);
 
-            return usuario;
+            return (usuario, true);
         }
 
         private string HashPassword(string senha)
