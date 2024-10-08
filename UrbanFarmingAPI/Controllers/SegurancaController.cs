@@ -23,7 +23,7 @@ namespace UrbanFarmingAPI.Controllers
                 return Unauthorized(new { mensagem = "Credenciais inválidas." });
             }
 
-            return Ok(new { usuario });
+            return Ok(usuario);
         }
     }
 }
