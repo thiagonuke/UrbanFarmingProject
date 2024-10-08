@@ -9,7 +9,7 @@ namespace UrbanFarmingAPI.Controllers
     [ApiController]
     public class SegurancaController : ControllerBase
     {
-        [HttpPost]
+        [HttpPost("CadastrarUsuario")]
         public async Task<IActionResult> CadastrarUsuario(Login usuario, [FromServices] ILoginService loginService)
             => Ok(await loginService.CadastrarUsuario(usuario));
 

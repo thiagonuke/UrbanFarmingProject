@@ -3,3 +3,7 @@
 ################################################################################
 
 /UrbanFarmingWeb.UI/.vs/UrbanFarmingWeb.UI/FileContentIndex
+# Ignorar diretórios nos, obj e bin
+nos/
+obj/
+bin/

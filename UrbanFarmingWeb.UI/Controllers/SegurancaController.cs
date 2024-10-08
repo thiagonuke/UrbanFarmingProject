@@ -27,11 +27,12 @@ namespace UrbanFarmingWeb.UI.Controllers
 		{
 			string retorno = string.Empty;
 
-			var dados = await _request.EfetuarLogin(dadosT.Usuario, dadosT.Senha);
+			var dados = await _request.EfetuarLogin(dadosT.Email, dadosT.Senha);
 
-			if (dados != null) {
+			if (dados.Email != null) {
 
-				HttpContext.Session.Set<User>("User", dados);
+
+				HttpContext.Session.Set<User>("USER", dados);
 
 				retorno = "Success: Logado!";
 
@@ -41,11 +42,22 @@ namespace UrbanFarmingWeb.UI.Controllers
 				retorno = "Usuario não encontrado!";
 			}
 
-
 			return Json(retorno);
 		}
 
 
+		[HttpPost("CadastrarUser")]
+		public async Task<IActionResult> CadastrarUser([FromBody] Login dadosL)
+		{
+			string retorno = string.Empty;
+
+			var dados = await _request.EfetuarCadastrado(dadosL);
+
+			return Json(retorno);
+		}
+
+		[HttpGet("Logout")]
+        public void Logout() => HttpContext.Session.Remove("USER");
 		
 	}
  

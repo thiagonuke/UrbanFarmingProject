@@ -2,6 +2,9 @@
     ViewData["Title"] = "Home Page";
 }
 <style>
+	header {
+		display:none !important;
+	}
 
 	body {
 		overflow-x: hidden; 
@@ -97,7 +100,7 @@
 								<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 							</div>
 							<div class="form-group">
-								<button id="Login" class="form-control btn btn-primary submit px-3">Sign In</button>
+								<button id="Login" class="form-control btn btn-primary px-3">Sign In</button>
 							</div>
 							<div class="form-group d-md-flex">
 								<div class="w-50">
@@ -129,10 +132,10 @@
 				<label for="email">Email:</label>
 				<input type="email" id="email" class="rounded-3 border w-75 p-1 bg-transparent text-white" placeholder="Email" required>
 				<label for="password">Senha:</label>
-				<input type="password" id="password-field" class="rounded-3 border w-75 p-1 bg-transparent text-white" placeholder="Senha" required>
+				<input type="password" id="password-field" class="firstPassword rounded-3 border w-75 p-1 bg-transparent text-white" placeholder="Senha" required>
 				<label for="confirmPassword">Confirmar Senha:</label>
-				<input type="password" id="password-field" class="rounded-3 border w-75 p-1 bg-transparent text-white" placeholder="Senha" required> <br />
-				<button type="button" class="btn btn-outline-light rounded-3">Cadastrar</button>
+				<input type="password" id="password-field" class="confirmPassword rounded-3 border w-75 p-1 bg-transparent text-white" placeholder="Senha" required> <br />
+				<button type="button" id="btncadastro" class="btn btn-outline-light rounded-3">Cadastrar</button>
 			</form>
 		</div>
 	</div>
@@ -146,30 +149,62 @@
 </html>
 
 
-
-
-
 <script>
 
 
 	$("#Login").on("click", function () {
-		debugger
 
 		$.ajax({
 			url: './Seguranca/Login',
 			method: "POST", 
 			data: JSON.stringify({
-				Usuario: $('#usuario').val().toString(),
+				Email: $('#usuario').val().toString(),
 				Senha: $('#password-field').val().toString()
 			}),
 			contentType: 'application/json; charset=utf-8',
 			success: function (response) {
-				//$('#resultado').html('Login bem-sucedido! ' + response);
+				if (response.includes("Success")) {
+					window.location.href = "../Home/MenuHome"
+				}else{
+					alert(response)
+				}
+				
 			},
 			error: function (xhr, status, error) {
-				//$('#resultado').html('Erro: ' + xhr.responseText);
+				alert(error)
 			}
 		});
+	});
+	
+	$("#btncadastro").on("click", function () {
+
+		if ($('.firstPassword').val().toString() == $('.confirmPassword').val().toString()) {
+			$.ajax({
+				url: './Seguranca/CadastrarUser',
+				method: "POST",
+				data: JSON.stringify({
+					Email: $('#email').val().toString(),
+					Senha: $('.firstPassword').val().toString(),
+					Nome: $('#name').val().toString().toString()
+				}),
+				contentType: 'application/json; charset=utf-8',
+				success: function (response) {
+					if (response.includes("Success")) {
+						alert(response)
+					} else {
+						alert(response)
+					}
+
+				},
+				error: function (xhr, status, error) {
+					alert(error)
+				}
+			});
+		} else {
+			alert("Senhas não se coincidem")
+		}
+
+		
 	});
 
 
