@@ -77,6 +77,7 @@ namespace UrbanFarming.Data.Repositories
                     return false; 
                 }
 
+                existingProduto.Codigo = produto.Codigo;
                 existingProduto.Nome = produto.Nome;
                 existingProduto.Valor = produto.Valor;
                 existingProduto.Descricao = produto.Descricao;

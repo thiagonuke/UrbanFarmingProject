@@ -15,10 +15,12 @@ namespace UrbanFarming.Data.Context
         {
             LoginMap.Map(modelBuilder);
             ProdutosMap.Map(modelBuilder);
+            FornecedoresMap.Map(modelBuilder);
             base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<Login> Login { get; set; }
         public DbSet<Produtos> Produtos { get; set; }
+        public DbSet<Fornecedores> Fornecedores { get; set; }
     }
 }
