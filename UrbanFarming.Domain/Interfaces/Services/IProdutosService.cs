@@ -9,7 +9,10 @@ namespace UrbanFarming.Domain.Interfaces.Services
 {
     public interface IProdutosService
     {
-        Task<bool> CadastrarUsuario(Produtos usuario);
-        Task<(Produtos usuario, bool sucesso)> Produtos(string email, string senha);
+        Task<Produtos> GetByCodigo(string codigo);
+        Task<List<Produtos>> GetAllProdutos();
+        Task<bool> PostProduto(Produtos produto); 
+        Task<bool> PutProduto(Produtos produto);
+        Task<bool> DeleteProduto(string codigo);
     }
 }

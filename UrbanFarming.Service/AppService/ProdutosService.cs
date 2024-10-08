@@ -9,77 +9,58 @@ namespace UrbanFarming.Service.AppService
 {
     public class ProdutosService : IProdutosService
     {
-        private readonly IProdutosRepository _ProdutosRepository;
+        private readonly IProdutosRepository _produtosRepository;
 
-        public ProdutosService(IProdutosRepository clienteRepository)
+        public ProdutosService(IProdutosRepository produtosRepository)
         {
-            _ProdutosRepository = clienteRepository;
+            _produtosRepository = produtosRepository;
         }
 
-        public async Task<Produtos> GetByEmail(string email)
+        public async Task<Produtos> GetByCodigo(string codigo)
         {
-            var usuario = await _ProdutosRepository.GetByEmail(email);
-
-            return usuario;
+            var produto = await _produtosRepository.GetByCodigo(codigo);
+            if (produto == null)
+            {
+                throw new NotFoundException("Produto não encontrado.");
+            }
+            return produto;
         }
 
-        public async Task<bool> PostUsuario(Produtos usuario)
+        public async Task<List<Produtos>> GetAllProdutos()
         {
-            var sucesso = await _ProdutosRepository.PostUsuario(usuario);
+            return await _produtosRepository.GetAllProdutos();
+        }
+
+        public async Task<bool> PostProduto(Produtos produto)
+        {
+            var sucesso = await _produtosRepository.PostProduto(produto);
 
             if (!sucesso)
-                throw new NotFoundException("Não foi possível cadastrar o usuário.");
+                throw new Exception("Não foi possível cadastrar o produto.");
 
             return sucesso;
         }
 
-        public async Task<bool> CadastrarUsuario(Produtos usuario)
+        public async Task<bool> PutProduto(Produtos produto)
         {
-            var cadastroExiste = await GetByEmail(usuario.Email);
+            var existingProduto = await _produtosRepository.GetByCodigo(produto.Codigo);
+            if (existingProduto == null)
+            {
+                throw new NotFoundException("Produto não encontrado.");
+            }
 
-            if (cadastroExiste != null)
-                throw new BadRequestException("Usuário já cadastrado.");
-
-            usuario.Senha = HashPassword(usuario.Senha);
-
-            return await PostUsuario(usuario);
+            return await _produtosRepository.PutProduto(produto);
         }
 
-        public async Task<(Produtos usuario, bool sucesso)> Produtos(string email, string senha)
+        public async Task<bool> DeleteProduto(string codigo)
         {
-            var usuario = await _ProdutosRepository.GetByEmail(email);
+            var existingProduto = await _produtosRepository.GetByCodigo(codigo);
+            if (existingProduto == null)
+            {
+                throw new NotFoundException("Produto não encontrado.");
+            }
 
-            if (usuario == null)
-                return (null, false);
-
-            if (!VerificaSenha(senha, usuario.Senha))
-                return (null, false);
-
-            return (usuario, true);
-        }
-
-        private string HashPassword(string senha)
-        {
-            using var hmac = new HMACSHA256();
-            var salt = hmac.Key;
-
-            var hashedPassword = hmac.ComputeHash(Encoding.UTF8.GetBytes(senha));
-            var saltString = Convert.ToBase64String(salt);
-            var hashString = Convert.ToBase64String(hashedPassword);
-
-            return $"{saltString}:{hashString}";
-        }
-
-        private bool VerificaSenha(string senha, string hashedSenha)
-        {
-            var parts = hashedSenha.Split(':');
-            var salt = Convert.FromBase64String(parts[0]);
-            var storedHash = Convert.FromBase64String(parts[1]);
-
-            using var hmac = new HMACSHA256(salt);
-            var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(senha));
-
-            return computedHash.SequenceEqual(storedHash);
+            return await _produtosRepository.DeleteProduto(codigo);
         }
     }
 }

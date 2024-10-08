@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿
 using Microsoft.AspNetCore.Mvc;
 using UrbanFarming.Domain.Classes;
+using UrbanFarming.Domain.Exceptions;
 using UrbanFarming.Domain.Interfaces.Services;
 
 namespace UrbanFarmingAPI.Controllers
@@ -9,21 +10,81 @@ namespace UrbanFarmingAPI.Controllers
     [ApiController]
     public class ProdutosController : ControllerBase
     {
-        [HttpPost]
-        public async Task<IActionResult> CadastrarUsuario(Produtos usuario, [FromServices] IProdutosService ProdutosService)
-            => Ok(await ProdutosService.CadastrarUsuario(usuario));
+        private readonly IProdutosService _produtosService;
 
-        [HttpGet("Produtos")]
-        public async Task<IActionResult> Produtos(string email, string senha, [FromServices] IProdutosService ProdutosService)
+        public ProdutosController(IProdutosService produtosService)
         {
-            var (usuario, sucesso) = await ProdutosService.Produtos(email, senha);
+            _produtosService = produtosService;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CadastrarProduto([FromBody] Produtos produto)
+        {
+            if (produto == null)
+            {
+                return BadRequest(new { mensagem = "Produto inválido." });
+            }
+
+            var sucesso = await _produtosService.PostProduto(produto);
 
             if (!sucesso)
             {
-                return Unauthorized(new { mensagem = "Credenciais inválidas." });
+                return BadRequest(new { mensagem = "Não foi possível cadastrar o produto." });
             }
 
-            return Ok(new { usuario, sucesso });
+            return Ok(new { mensagem = "Produto cadastrado com sucesso." });
+        }
+
+        [HttpGet("{codigo}")]
+        public async Task<IActionResult> GetByCodigo(string codigo)
+        {
+            try
+            {
+                var produto = await _produtosService.GetByCodigo(codigo);
+                return Ok(produto);
+            }
+            catch (NotFoundException ex)
+            {
+                return NotFound(new { mensagem = ex.Message });
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllProdutos()
+        {
+            var produtos = await _produtosService.GetAllProdutos();
+            return Ok(produtos);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateProduto([FromBody] Produtos produto)
+        {
+            if (produto == null || string.IsNullOrWhiteSpace(produto.Codigo))
+            {
+                return BadRequest(new { mensagem = "Produto inválido." });
+            }
+
+            var sucesso = await _produtosService.PutProduto(produto);
+
+            if (!sucesso)
+            {
+                return NotFound(new { mensagem = "Produto não encontrado." });
+            }
+
+            return Ok(new { mensagem = "Produto atualizado com sucesso." });
+        }
+
+        [HttpDelete("{codigo}")]
+        public async Task<IActionResult> DeleteProduto(string codigo)
+        {
+            var sucesso = await _produtosService.DeleteProduto(codigo);
+
+            if (!sucesso)
+            {
+                return NotFound(new { mensagem = "Produto não encontrado." });
+            }
+
+            return Ok(new { mensagem = "Produto deletado com sucesso." });
         }
     }
 }
