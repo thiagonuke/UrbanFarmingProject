@@ -2895,23 +2895,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mthia\\.nuget\\packages\\": {},
+    "C:\\Users\\vynic\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj",
+      "projectUniqueName": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj",
       "projectName": "UrbanFarmingAPI",
-      "projectPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj",
-      "packagesPath": "C:\\Users\\mthia\\.nuget\\packages\\",
-      "outputPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingAPI\\obj\\",
+      "projectPath": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj",
+      "packagesPath": "C:\\Users\\vynic\\.nuget\\packages\\",
+      "outputPath": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mthia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vynic\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2927,14 +2927,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Data\\UrbanFarming.Data.csproj": {
-              "projectPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Data\\UrbanFarming.Data.csproj"
+            "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Data\\UrbanFarming.Data.csproj": {
+              "projectPath": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Data\\UrbanFarming.Data.csproj"
             },
-            "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj": {
-              "projectPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj"
+            "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj": {
+              "projectPath": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj"
             },
-            "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Service\\UrbanFarming.Service.csproj": {
-              "projectPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Service\\UrbanFarming.Service.csproj"
+            "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Service\\UrbanFarming.Service.csproj": {
+              "projectPath": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Service\\UrbanFarming.Service.csproj"
             }
           }
         }
@@ -2943,6 +2943,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2989,7 +2994,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

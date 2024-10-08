@@ -3,13 +3,13 @@
   "WorkspaceRootPath": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{531C74E4-B078-47AE-AE18-DBD4CD276E44}|..\\UrbanFarming.Data\\UrbanFarming.Data.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarming.data\\repositories\\produtosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{531C74E4-B078-47AE-AE18-DBD4CD276E44}|..\\UrbanFarming.Data\\UrbanFarming.Data.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarming.data\\repositories\\fornecedoresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EF2B155E-87B1-4B27-93A5-0459715DCB63}|..\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarming.domain\\interfaces\\repositories\\ifornecedoresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{531C74E4-B078-47AE-AE18-DBD4CD276E44}|..\\UrbanFarming.Data\\UrbanFarming.Data.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarming.data\\repositories\\produtosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EF2B155E-87B1-4B27-93A5-0459715DCB63}|..\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj|c:\\projetosagosto\\urban\\urbanfarmingproject\\urbanfarming.domain\\interfaces\\repositories\\iprodutosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -82,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Document",
@@ -125,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "IFornecedoresRepository.cs",
               "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\Interfaces\\Repositories\\IFornecedoresRepository.cs",
               "RelativeDocumentMoniker": "..\\UrbanFarming.Domain\\Interfaces\\Repositories\\IFornecedoresRepository.cs",
@@ -138,13 +138,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FornecedoresRepository.cs",
               "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Data\\Repositories\\FornecedoresRepository.cs",
               "RelativeDocumentMoniker": "..\\UrbanFarming.Data\\Repositories\\FornecedoresRepository.cs",
               "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Data\\Repositories\\FornecedoresRepository.cs",
               "RelativeToolTip": "..\\UrbanFarming.Data\\Repositories\\FornecedoresRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAuAAAA",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAAwFAAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T05:01:12.621Z",
               "EditorCaption": ""
@@ -250,13 +250,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ProdutosRepository.cs",
               "DocumentMoniker": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Data\\Repositories\\ProdutosRepository.cs",
               "RelativeDocumentMoniker": "..\\UrbanFarming.Data\\Repositories\\ProdutosRepository.cs",
               "ToolTip": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Data\\Repositories\\ProdutosRepository.cs",
               "RelativeToolTip": "..\\UrbanFarming.Data\\Repositories\\ProdutosRepository.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAIwA8AAAAkAAAA",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAIwFgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T03:29:46.786Z",
               "EditorCaption": ""
