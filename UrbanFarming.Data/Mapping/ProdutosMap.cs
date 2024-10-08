@@ -35,7 +35,13 @@ namespace UrbanFarming.Data.Mapping
                 .Property(p => p.Descricao)
                 .HasColumnName("DESCRICAO")
                 .HasMaxLength(500)
-                .IsRequired(false); 
+                .IsRequired(false);
+
+            modelBuilder.Entity<Produtos>()
+                .Property(p => p.LinkImagem)
+                .HasColumnName("LINKIMAGEM")
+                .HasMaxLength(255) 
+                .IsRequired(false);
         }
     }
 }
