@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UrbanFarmingDesktop.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+842cb379a6e16d219a9f79209c31eb056d08ad39")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27977bb175bdf0a7834f763a0727a438eb4c71ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("UrbanFarmingDesktop.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UrbanFarmingDesktop.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
