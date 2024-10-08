@@ -1,5 +1,7 @@
 ﻿using UrbanFarming.Data.Repositories;
 using UrbanFarming.Domain.Interfaces.Repositories;
+using UrbanFarming.Domain.Interfaces.Services;
+using UrbanFarming.Service.AppService;
 
 namespace UrbanFarming.IoC.Modules
 {
@@ -8,6 +10,8 @@ namespace UrbanFarming.IoC.Modules
         public static void InjectDependencies(IServiceCollection services)
         {
             services.AddTransient<ILoginRepository, LoginRepository>();
+            services.AddTransient<IProdutosRepository, ProdutosRepository>();
+            services.AddTransient<IFornecedoresRepository, FornecedoresRepository>();
         }
     }
 }

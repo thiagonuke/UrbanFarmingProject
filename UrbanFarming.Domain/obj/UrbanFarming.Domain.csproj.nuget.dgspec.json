@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj": {}
+    "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj": {}
   },
   "projects": {
-    "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj": {
+    "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj",
+        "projectUniqueName": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj",
         "projectName": "UrbanFarming.Domain",
-        "projectPath": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj",
-        "packagesPath": "C:\\Users\\vynic\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjetosAgosto\\Urban\\UrbanFarmingProject\\UrbanFarming.Domain\\obj\\",
+        "projectPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj",
+        "packagesPath": "C:\\Users\\mthia\\.nuget\\packages\\",
+        "outputPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\vynic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mthia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,11 +39,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -65,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
