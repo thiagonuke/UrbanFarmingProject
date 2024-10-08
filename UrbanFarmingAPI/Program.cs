@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using UrbanFarming.Data.Context;
 using ProjetoModeloApi.IoC;
+using UrbanFarming.Domain.Interfaces.Services;
+using UrbanFarming.Service.AppService;
 
 var builder = WebApplication.CreateBuilder(args);
 

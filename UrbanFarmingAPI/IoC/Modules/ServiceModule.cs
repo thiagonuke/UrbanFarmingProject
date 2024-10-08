@@ -8,6 +8,7 @@ namespace UrbanFarming.IoC.Modules
         public static void InjectDependencies(IServiceCollection services)
         {
             services.AddTransient<ILoginService, LoginService>();
+            services.AddTransient<IProdutosService, ProdutosService>();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿<style>
+﻿@model List<UrbanFarming.Domain.Classes.Produtos>
+<style>
 
     body {
         font-family: Arial, sans-serif;
@@ -154,18 +155,22 @@
     </div>
 
     <section class="product-grid">
-        <div class="product-card d-flex flex-column justify-content-around shadow-lg">
-            <img src="https://www.shutterstock.com/image-photo/tomato-isolated-tomatoes-leaf-on-260nw-2274203591.jpg" alt="Tomate">
-            <h2>Tomate</h2>
-            <p>R$ 4.50</p>
-            <button>Adicionar ao Carrinho</button>
-        </div>
-        <div class="product-card shadow-lg">
+        @foreach(var prod in Model)
+        {
+            <div class="product-card d-flex flex-column justify-content-around shadow-lg">
+                <img src="@prod.LinkImagem">
+                <h2>@prod.Nome</h2>
+                <p>@prod.Valor</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+        }
+       
+@*         <div class="product-card shadow-lg">
             <img src="https://cdn.awsli.com.br/600x1000/1982/1982052/produto/174027508/53c931b15d.jpg" alt="Alface Americana">
             <h2>Alface Americana</h2>
             <p>R$ 3.00</p>
             <button>Adicionar ao Carrinho</button>
-        </div>
+        </div> *@
     </section>
 
     <aside class="cart">
