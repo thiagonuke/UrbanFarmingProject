@@ -12,11 +12,32 @@ namespace UrbanFarming.Data.Repositories
         {
 
         }
-
-        public async Task<Login> GetById(int id)
+        
+        public async Task<Login> GetByEmail(string email) 
         {
-            var usuario = await _context.Login.FirstOrDefaultAsync(u => u.Id == id);
-            return usuario;
+            try
+            {
+                return await _context.Login.FirstOrDefaultAsync(u => u.Email == email);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Ocorreu um erro: {ex.Message}");
+            }
+        }
+
+        public async Task<bool> PostUsuario(Login usuario)
+        {
+            try
+            {
+                await _context.Login.AddAsync(usuario);
+                await _context.SaveChangesAsync();
+
+                return true;
+            }
+            catch (Exception ex) 
+            {
+                return false;
+            }
         }
     }
 }

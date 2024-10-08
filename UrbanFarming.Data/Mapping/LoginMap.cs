@@ -18,11 +18,11 @@ namespace UrbanFarming.Data.Mapping
                 .HasColumnName("Email");
 
             modelBuilder.Entity<Login>()
-                .Property(x => x.Nome)
+                .Property(x => x.Senha)
                 .HasColumnName("Senha");
 
             modelBuilder.Entity<Login>()
-                .Property(x => x.Senha)
+                .Property(x => x.Nome)
                 .HasColumnName("Nome");
         }
     }
