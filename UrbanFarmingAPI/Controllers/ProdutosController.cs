@@ -1,5 +1,4 @@
-﻿
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using UrbanFarming.Domain.Classes;
 using UrbanFarming.Domain.Exceptions;
 using UrbanFarming.Domain.Interfaces.Services;
