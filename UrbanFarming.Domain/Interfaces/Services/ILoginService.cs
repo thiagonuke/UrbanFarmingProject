@@ -10,6 +10,6 @@ namespace UrbanFarming.Domain.Interfaces.Services
     public interface ILoginService
     {
         Task<bool> CadastrarUsuario(Login usuario);
-        Task<(Login usuario, bool sucesso)> Login(string email, string senha);
+        Task<Login> Login(string email, string senha);
     }
 }

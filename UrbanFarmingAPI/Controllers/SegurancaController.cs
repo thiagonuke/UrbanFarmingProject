@@ -16,9 +16,9 @@ namespace UrbanFarmingAPI.Controllers
         [HttpGet("Login")]
         public async Task<IActionResult> Login(string email, string senha, [FromServices] ILoginService loginService)
         {
-            var (usuario, sucesso) = await loginService.Login(email, senha);
+            var usuario = await loginService.Login(email, senha);
 
-            if (!sucesso)
+            if (usuario == null)
             {
                 return Unauthorized(new { mensagem = "Credenciais inválidas." });
             }

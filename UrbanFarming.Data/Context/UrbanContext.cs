@@ -14,9 +14,11 @@ namespace UrbanFarming.Data.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             LoginMap.Map(modelBuilder);
+            ProdutosMap.Map(modelBuilder);
             base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<Login> Login { get; set; }
+        public DbSet<Produtos> Produtos { get; set; }
     }
 }

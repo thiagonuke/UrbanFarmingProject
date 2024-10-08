@@ -45,17 +45,17 @@ namespace UrbanFarming.Service.AppService
             return await PostUsuario(usuario);
         }
 
-        public async Task<(Login usuario, bool sucesso)> Login(string email, string senha)
+        public async Task<Login> Login(string email, string senha)
         {
             var usuario = await _loginRepository.GetByEmail(email);
 
             if (usuario == null)
-                return (null, false);
+                return null;
 
             if (!VerificaSenha(senha, usuario.Senha))
-                return (null, false);
+                return null;
 
-            return (usuario, true);
+            return usuario;
         }
 
         private string HashPassword(string senha)
