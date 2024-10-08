@@ -4,7 +4,7 @@ using UrbanFarmingWeb.UI.Util;
 
 namespace UrbanFarmingWeb.UI.Controllers
 {
-    public class ProdutosController : Controller
+    public class FornecedorController : Controller
     {
         public IActionResult Index()
         {

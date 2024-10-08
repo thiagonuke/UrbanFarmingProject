@@ -132,10 +132,10 @@
 				<label for="email">Email:</label>
 				<input type="email" id="email" class="rounded-3 border w-75 p-1 bg-transparent text-white" placeholder="Email" required>
 				<label for="password">Senha:</label>
-				<input type="password" id="password-field" class="rounded-3 border w-75 p-1 bg-transparent text-white" placeholder="Senha" required>
+				<input type="password" id="password-field" class="firstPassword rounded-3 border w-75 p-1 bg-transparent text-white" placeholder="Senha" required>
 				<label for="confirmPassword">Confirmar Senha:</label>
-				<input type="password" id="password-field" class="rounded-3 border w-75 p-1 bg-transparent text-white" placeholder="Senha" required> <br />
-				<button type="button" class="btn btn-outline-light rounded-3">Cadastrar</button>
+				<input type="password" id="password-field" class="confirmPassword rounded-3 border w-75 p-1 bg-transparent text-white" placeholder="Senha" required> <br />
+				<button type="button" id="btncadastro" class="btn btn-outline-light rounded-3">Cadastrar</button>
 			</form>
 		</div>
 	</div>
@@ -153,7 +153,6 @@
 
 
 	$("#Login").on("click", function () {
-		debugger
 
 		$.ajax({
 			url: './Seguranca/Login',
@@ -164,12 +163,48 @@
 			}),
 			contentType: 'application/json; charset=utf-8',
 			success: function (response) {
-				window.location.href = "../Home/MenuHome"
+				if (response.includes("Success")) {
+					window.location.href = "../Home/MenuHome"
+				}else{
+					alert(response)
+				}
+				
 			},
 			error: function (xhr, status, error) {
-				//$('#resultado').html('Erro: ' + xhr.responseText);
+				alert(error)
 			}
 		});
+	});
+	
+	$("#btncadastro").on("click", function () {
+
+		if ($('.firstPassword').val().toString() == $('.confirmPassword').val().toString()) {
+			$.ajax({
+				url: './Seguranca/CadastrarUser',
+				method: "POST",
+				data: JSON.stringify({
+					Email: $('#email').val().toString(),
+					Senha: $('.firstPassword').val().toString(),
+					Nome: $('#name').val().toString().toString()
+				}),
+				contentType: 'application/json; charset=utf-8',
+				success: function (response) {
+					if (response.includes("Success")) {
+						alert(response)
+					} else {
+						alert(response)
+					}
+
+				},
+				error: function (xhr, status, error) {
+					alert(error)
+				}
+			});
+		} else {
+			alert("Senhas não se coincidem")
+		}
+
+		
 	});
 
 

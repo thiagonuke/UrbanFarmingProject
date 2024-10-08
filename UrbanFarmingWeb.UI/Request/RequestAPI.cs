@@ -9,11 +9,12 @@ namespace UrbanFarmingWeb.UI.Request
 		
 			_httpClient = httpClient;
 
-			_httpClient.BaseAddress = new Uri("https://localhost:7191");
+			_httpClient.BaseAddress = new Uri("https://localhost:44308");
 		
 		}
 
-		public async Task<User> EfetuarLogin(string username, string password) => await _httpClient.GetAsync($"/api/Seguranca/").Result.Content.ReadFromJsonAsync<User>();
+		public async Task<User> EfetuarLogin(string username, string password) => await _httpClient.GetAsync($"/api/Seguranca/Login?email={username}&senha={password}").Result.Content.ReadFromJsonAsync<User>();
+		public async Task<HttpResponseMessage> EfetuarCadastrado(Login dados) => _httpClient.PostAsJsonAsync<Login>($"/api/Seguranca/CadastrarUsuario", dados).Result;
 
 	}
 }

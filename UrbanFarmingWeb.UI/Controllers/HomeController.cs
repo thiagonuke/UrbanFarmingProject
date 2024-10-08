@@ -30,7 +30,7 @@ namespace UrbanFarmingWeb.UI.Controllers
         {
             if (HttpContext.Session.Get<User>("USER") != null)
             {
-                ViewData["Name"] = HttpContext.Session.Get<User>("USER").Nome;
+                ViewBag.Name = HttpContext.Session.Get<User>("USER").Nome;
             }
 
             return View("../Menu/Index");

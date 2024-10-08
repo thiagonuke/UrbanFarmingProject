@@ -27,17 +27,9 @@ namespace UrbanFarmingWeb.UI.Controllers
 		{
 			string retorno = string.Empty;
 
-			//var dados = await _request.EfetuarLogin(dadosT.Email, dadosT.Senha);
+			var dados = await _request.EfetuarLogin(dadosT.Email, dadosT.Senha);
 
-			var dados = new User()
-				{
-					Id = 12,
-					Nome = "Thiago",
-					Email = "mthiag@gmail.com",
-					Senha = ""
-				};
-
-			if (dados != null) {
+			if (dados.Email != null) {
 
 
 				HttpContext.Session.Set<User>("USER", dados);
@@ -53,7 +45,18 @@ namespace UrbanFarmingWeb.UI.Controllers
 			return Json(retorno);
 		}
 
-        [HttpGet("Logout")]
+
+		[HttpPost("CadastrarUser")]
+		public async Task<IActionResult> CadastrarUser([FromBody] Login dadosL)
+		{
+			string retorno = string.Empty;
+
+			var dados = await _request.EfetuarCadastrado(dadosL);
+
+			return Json(retorno);
+		}
+
+		[HttpGet("Logout")]
         public void Logout() => HttpContext.Session.Remove("USER");
 		
 	}

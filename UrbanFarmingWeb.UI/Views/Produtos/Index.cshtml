@@ -54,9 +54,6 @@
         cursor: pointer;
     }
 
-    button:hover {
-        background-color: #218838;
-    }
 
     .product-card:hover {
         transform: translateY(-10px);
@@ -84,13 +81,9 @@
     }
 
     .open-cart-btn {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
         padding: 10px 20px;
-        background-color: #28a745;
+        background-color: whitesmoke;
         color: white;
-        border: none;
         border-radius: 5px;
         cursor: pointer;
     }
@@ -103,13 +96,13 @@
         border-radius: 8px;
         position: fixed;
         top: 0;
-        right: -350px; /* Carrinho começa fora da tela */
+        right: -350px;
         height: 100vh;
-        transition: right 0.4s ease; /* Animação */
+        transition: right 0.4s ease; 
     }
 
         .cart.open {
-            right: 0; /* Quando aberto, o carrinho é mostrado */
+            right: 0; 
         }
 
     .cart-items {
@@ -156,9 +149,12 @@
 <!doctype html>
 <html lang="en">
 <body style="background-color: seagreen;">
-    <button class="open-cart-btn ">Abrir Carrinho</button>
+    <div class="col-md-12 d-flex justify-content-end">
+        <button class="open-cart-btn "><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png" alt="shopping-cart--v1" /></button>
+    </div>
+
     <section class="product-grid">
-        <div class="product-card shadow-lg">
+        <div class="product-card d-flex flex-column justify-content-around shadow-lg">
             <img src="https://www.shutterstock.com/image-photo/tomato-isolated-tomatoes-leaf-on-260nw-2274203591.jpg" alt="Tomate">
             <h2>Tomate</h2>
             <p>R$ 4.50</p>
@@ -191,6 +187,12 @@
     const cart = document.querySelector('.cart');
     const openCartBtn = document.querySelector('.open-cart-btn');
     const closeCartBtn = document.querySelector('.close-cart-btn');
+    const cartItemsList = document.querySelector('.cart-items');
+    const totalPriceElement = document.querySelector('.total-price');
+    const addToCartButtons = document.querySelectorAll('.product-card button');
+
+    let cartItems = [];
+    let total = 0;
 
     openCartBtn.addEventListener('click', () => {
         cart.classList.add('open');
@@ -198,5 +200,41 @@
 
     closeCartBtn.addEventListener('click', () => {
         cart.classList.remove('open');
+    });
+
+    function addToCart(itemName, itemPrice) {
+        const existingItem = cartItems.find(item => item.name === itemName);
+
+        if (existingItem) {
+            existingItem.quantity++;
+        } else {
+            cartItems.push({ name: itemName, price: itemPrice, quantity: 1 });
+        }
+
+        total += itemPrice;
+
+        updateCartUI();
+    }
+
+    function updateCartUI() {
+        cartItemsList.innerHTML = '';
+
+        cartItems.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.name} (x${item.quantity}) - R$ ${(item.price * item.quantity).toFixed(2)}`;
+            cartItemsList.appendChild(li);
+        });
+
+        totalPriceElement.textContent = `R$ ${total.toFixed(2)}`;
+    }
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const productCard = e.target.closest('.product-card');
+            const productName = productCard.querySelector('h2').textContent;
+            const productPrice = parseFloat(productCard.querySelector('p').textContent.replace('R$', '').trim());
+
+            addToCart(productName, productPrice);
+        });
     });
 </script>
