@@ -8,7 +8,7 @@ namespace UrbanFarming.Data.Mapping
         public static void Map(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Fornecedores>()
-                .ToTable("Fornecedores");
+                .ToTable("Fornecedor");
 
             modelBuilder.Entity<Fornecedores>()
                 .HasKey(p => p.Codigo);

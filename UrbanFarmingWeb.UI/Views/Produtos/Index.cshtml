@@ -151,33 +151,28 @@
 <html lang="en">
 <body style="background-color: seagreen;">
     <div class="col-md-12 d-flex justify-content-end">
-        <button class="open-cart-btn "><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png" alt="shopping-cart--v1" /></button>
+        <button class="open-cart-btn">
+            <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png" alt="shopping-cart--v1" />
+        </button>
     </div>
 
-    <section class="product-grid">
-        @foreach(var prod in Model)
+    <section class="product-grid mt-4">
+        @foreach (var prod in Model)
         {
             <div class="product-card d-flex flex-column justify-content-around shadow-lg">
                 <img src="@prod.LinkImagem">
                 <h2>@prod.Nome</h2>
-                <p>@prod.Valor</p>
+                <span>@prod.Descricao</span>
+                <h4><b>R$ @prod.Valor</b></h4> 
                 <button>Adicionar ao Carrinho</button>
             </div>
         }
-       
-@*         <div class="product-card shadow-lg">
-            <img src="https://cdn.awsli.com.br/600x1000/1982/1982052/produto/174027508/53c931b15d.jpg" alt="Alface Americana">
-            <h2>Alface Americana</h2>
-            <p>R$ 3.00</p>
-            <button>Adicionar ao Carrinho</button>
-        </div> *@
     </section>
 
     <aside class="cart">
         <button class="close-cart-btn">X</button>
         <h2>Carrinho</h2>
-        <ul class="cart-items">
-        </ul>
+        <ul class="cart-items"></ul>
         <p>Total: <span class="total-price">R$ 0.00</span></p>
         <button class="checkout-btn">Finalizar Compra</button>
     </aside>
@@ -221,12 +216,31 @@
         updateCartUI();
     }
 
+    function removeFromCart(itemName) {
+        const itemIndex = cartItems.findIndex(item => item.name === itemName);
+
+        if (itemIndex > -1) {
+            total -= cartItems[itemIndex].price * cartItems[itemIndex].quantity; 
+            cartItems.splice(itemIndex, 1); 
+            updateCartUI();
+        }
+    }
+
     function updateCartUI() {
         cartItemsList.innerHTML = '';
 
         cartItems.forEach(item => {
             const li = document.createElement('li');
             li.textContent = `${item.name} (x${item.quantity}) - R$ ${(item.price * item.quantity).toFixed(2)}`;
+
+            const removeBtn = document.createElement('button');
+            removeBtn.textContent = 'X';
+            removeBtn.style.marginLeft = '10px'; 
+            removeBtn.addEventListener('click', () => {
+                removeFromCart(item.name);
+            });
+
+            li.appendChild(removeBtn);
             cartItemsList.appendChild(li);
         });
 
@@ -237,7 +251,7 @@
         button.addEventListener('click', (e) => {
             const productCard = e.target.closest('.product-card');
             const productName = productCard.querySelector('h2').textContent;
-            const productPrice = parseFloat(productCard.querySelector('p').textContent.replace('R$', '').trim());
+            const productPrice = parseFloat(productCard.querySelector('h4 b').textContent.replace('R$', '').trim()); 
 
             addToCart(productName, productPrice);
         });

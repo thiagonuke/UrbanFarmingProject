@@ -7,7 +7,6 @@ using UrbanFarming.Domain.Interfaces.Services;
 namespace UrbanFarmingAPI.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
     public class FornecedoresController : ControllerBase
     {
         private readonly IFornecedoresService _fornecedoresService;
@@ -18,7 +17,7 @@ namespace UrbanFarmingAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CadastrarFornecedor([FromBody] Fornecedores fornecedor)
+        public async Task<IActionResult> CadastrarFornecedor([FromBody]Fornecedores fornecedor)
         {
             if (fornecedor == null)
             {

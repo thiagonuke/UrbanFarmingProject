@@ -10,7 +10,7 @@
 <html lang="en">
 <body style="background-color: seagreen;">
 
-    <form >
+    <form>
         <div class="form-row">
             <div class="form-group col-md-6">
                 <h3 class="mt-4">Pessoa Jurídica ou Física</h3>
@@ -25,7 +25,10 @@
                 </div>
             </div>
         </div>
-
+        <div class="form-group col-md-6">
+            <label for="inputCodigo">Codigo</label>
+            <input type="text" class="form-control" id="inputCodigo">
+        </div>
         <div id="campoCNPJ" style="display: none;">
             <div class="form-group col-md-6">
                 <label for="inputCNPJ">CNPJ</label>
@@ -33,11 +36,16 @@
             </div>
             <div class="form-group col-md-6">
                 <label for="inputRazaoSocial">Razão Social</label>
-                <input type="text" id="inputRazaoSocial" class="form-control" placeholder="Razão Social">
+                <input type="text" id="inputRazaoSocial" class="form-control" placeholder="Razão Social" readonly>
             </div>
             <div class="form-group col-md-6">
                 <label for="inputNomeFantasia">Nome Fantasia</label>
-                <input type="text" id="inputNomeFantasia" class="form-control" placeholder="Nome Fantasia">
+                <input type="text" id="inputNomeFantasia" class="form-control" placeholder="Nome Fantasia" readonly>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="inputEnquadramentoEstadual">Enquadramento Estadual</label>
+                <input type="text" class="form-control" id="inputEnquadramentoEstadual" placeholder="Enquadramento Estadual" readonly>
             </div>
         </div>
 
@@ -51,32 +59,37 @@
                 <input type="text" id="inputNome" class="form-control" placeholder="Nome Completo">
             </div>
         </div>
-
         <div class="form-group col-md-6">
             <label for="inputEmail">Email</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="email@empresa.com" required>
+            <input type="email" id="inputEmail" class="form-control" placeholder="email@empresa.com" readonly>
         </div>
-
+        <div class="form-group col-md-6">
+            <label for="inputTelefone">Telefone</label>
+            <input type="text" id="inputTelefone" class="form-control" placeholder="Telefone" readonly>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputEndereco">Endereço</label>
+            <input type="text" id="inputEndereco" class="form-control" placeholder="Endereço" readonly>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputCEP">CEP</label>
+            <input type="text" id="inputCEP" class="form-control" placeholder="CEP" readonly>
+        </div>
         <div class="form-group col-md-6">
             <label for="inputPaisOrigem">País de Origem</label>
-            <input type="text" class="form-control" id="inputPaisOrigem" placeholder="País de Origem" required>
+            <input type="text" class="form-control" id="inputPaisOrigem" placeholder="País de Origem" readonly>
         </div>
-
-        <div class="form-group col-md-6">
-            <label for="inputEnquadramentoEstadual">Enquadramento Estadual</label>
-            <input type="text" class="form-control" id="inputEnquadramentoEstadual" placeholder="Enquadramento Estadual" required>
+        <div class="col-md-12 d-flex justify-content-center">
+            <button type="button" id="btncadastro" onclick="SalvarFornecedor()" class="btn btn-outline-light rounded-3">Cadastrar</button>
         </div>
-
+       
     </form>
 
-    <div class="col-md-12 d-flex justify-content-center">
-
-        <button type="button" id="btncadastro" class="btn btn-outline-light rounded-3">Cadastrar</button>
-    </div>
+   
 </body>
 </html>
-
-        <script>
+<script src="~/js/jquery.min.js"></script>
+<script>
 
     function mostrarCampos() {
         var pessoaJuridica = document.getElementById("pessoaJuridica").checked;
@@ -91,4 +104,75 @@
             document.getElementById("campoCPF").style.display = "block";
         }
     }
-        </script>
+
+    $('#inputCNPJ').on('blur', function () {
+        let cnpj = document.getElementById('inputCNPJ').value;
+        if (cnpj.length === 14) {
+            $.ajax({
+                url: `https://www.receitaws.com.br/v1/cnpj/${cnpj}`,
+                method: 'GET',
+                dataType: 'jsonp',
+                success: function (data) {
+                    
+                    if (data.status === 'OK') {
+                        document.getElementById('inputRazaoSocial').value = data.nome;
+                        document.getElementById('inputNomeFantasia').value = data.fantasia;
+                        document.getElementById('inputEmail').value = data.email || 'N/A';
+                        document.getElementById('inputTelefone').value = data.telefone || 'N/A';
+                        document.getElementById('inputEndereco').value = `${data.logradouro}, ${data.numero} - ${data.bairro}`;
+                        document.getElementById('inputCEP').value = data.cep;
+                        document.getElementById('inputPaisOrigem').value = "Brasil";
+                        document.getElementById('inputEnquadramentoEstadual').value = data.natureza_juridica;
+                    } else {
+                        toastr.error('CNPJ inválido ou não encontrado.');
+                    }
+                },
+                error: function () {
+                    alert('Erro ao consultar CNPJ.');
+                }
+            });
+        }
+
+    });
+
+    function SalvarFornecedor() {
+        debugger
+        var pessoaJuridica = $('#pessoaJuridica').is(':checked');
+        var pessoaFisica = $('#pessoaFisica').is(':checked');
+        
+        if (pessoaJuridica != false || pessoaFisica != false){
+
+            $.ajax({
+                url: '../Fornecedor/CadastrarFornecedor',
+                method: "POST",
+                data: JSON.stringify({
+                    Codigo: $('#inputCodigo').val(),
+                    RazaoSocial: pessoaJuridica ? $('#inputRazaoSocial').val() : null,
+                    NomeFantasia: pessoaJuridica ? $('#inputNomeFantasia').val() : null,
+                    CNPJ: pessoaJuridica ? $('#inputCNPJ').val() : null,
+                    CPF: pessoaFisica ? $('#inputCPF').val() : null,
+                    NomeCompleto: pessoaFisica ? $('#inputNome').val() : null,
+                    Email: $('#inputEmail').val(),
+                    PaisOrigem: $('#inputPaisOrigem').val(),
+                    EnquadramentoEstadual: $('#inputEnquadramentoEstadual').val(),
+                    PessoaJuridica: pessoaJuridica,
+                    PessoaFisica: pessoaFisica
+                }),
+                contentType: 'application/json; charset=utf-8',
+                success: function (response) {
+                    alert("Cadastro realizado com sucesso!");
+                },
+                error: function (error) {
+                    alert("Erro ao realizar o cadastro.");
+                }
+            });
+        }else{
+            alert("Selecione as opções para prosseguir!")
+        }
+
+
+        
+    }
+
+
+</script>

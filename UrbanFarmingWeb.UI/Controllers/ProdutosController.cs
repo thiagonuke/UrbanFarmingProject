@@ -21,7 +21,7 @@ namespace UrbanFarmingWeb.UI.Controllers
                 ViewBag.Name = HttpContext.Session.Get<User>("USER").Nome;
             }
 
-            var produtos = _request.ListaProdutos();
+            var produtos = _request.ListaProdutos().Result;
 
             return View(produtos);
         }
