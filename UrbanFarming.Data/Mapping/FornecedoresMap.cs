@@ -19,7 +19,7 @@ namespace UrbanFarming.Data.Mapping
                 .HasMaxLength(20)
                 .IsRequired();
 
-            modelBuilder.Entity<Fornecedores>()
+            modelBuilder    .Entity<Fornecedores>()
                 .Property(x => x.RazaoSocial)
                 .HasColumnName("RazaoSocial")
                 .IsRequired()

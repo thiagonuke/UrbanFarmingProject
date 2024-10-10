@@ -58,6 +58,28 @@ namespace UrbanFarming.Service.AppService
             return usuario;
         }
 
+        public async Task<bool> PutUsuario(Login usuario)
+        {
+            var usuarioExiste = await _loginRepository.GetByEmail(usuario.Email);
+            if (usuarioExiste == null)
+            {
+                throw new NotFoundException("Usuário não encontrado.");
+            }
+
+            return await _loginRepository.PutUsuario(usuario);
+        }
+
+        public async Task<bool> DeleteUsuario(string email)
+        {
+            var usuarioExiste = await _loginRepository.GetByEmail(email);
+            if (usuarioExiste == null)
+            {
+                throw new NotFoundException("Usuário não encontrado.");
+            }
+
+            return await _loginRepository.DeleteUsuario(email);
+        }
+
         private string HashPassword(string senha)
         {
             using var hmac = new HMACSHA256();

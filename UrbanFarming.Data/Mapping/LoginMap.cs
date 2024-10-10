@@ -24,6 +24,10 @@ namespace UrbanFarming.Data.Mapping
             modelBuilder.Entity<Login>()
                 .Property(x => x.Nome)
                 .HasColumnName("Nome");
+            
+            modelBuilder.Entity<Login>()
+                .Property(x => x.Administrador)
+                .HasColumnName("Administrador");
         }
     }
 }

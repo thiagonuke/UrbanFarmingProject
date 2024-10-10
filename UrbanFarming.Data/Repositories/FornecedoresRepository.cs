@@ -44,6 +44,37 @@ namespace UrbanFarming.Data.Repositories
                 throw new Exception($"Ocorreu um erro: {ex.Message}");
             }
         }
+     
+        public async Task<bool> PutFornecedor(Fornecedores fornecedor)
+        {
+            try
+            {
+                var fornecedorExistente = await _context.Fornecedores.FindAsync(fornecedor.Codigo);
+
+                if (fornecedorExistente == null)
+                {
+                    return false; 
+                }
+
+                fornecedorExistente.Codigo = fornecedor.Codigo;
+                fornecedorExistente.RazaoSocial = fornecedor.RazaoSocial;
+                fornecedorExistente.NomeFantasia = fornecedor.NomeFantasia;
+                fornecedorExistente.CNPJ = fornecedor.CNPJ;
+                fornecedorExistente.PaisOrigem = fornecedor.PaisOrigem;
+                fornecedorExistente.Email = fornecedor.Email;
+                fornecedorExistente.EnquadramentoEstadual = fornecedor.EnquadramentoEstadual;
+                fornecedorExistente.RamoAtividade = fornecedor.RamoAtividade;
+                fornecedorExistente.PessoaJuridica = fornecedor.PessoaJuridica;
+                fornecedorExistente.PessoaFisica = fornecedor.PessoaFisica;
+                await _context.SaveChangesAsync();
+
+                return true; 
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Ocorreu um erro: {ex.Message}");
+            }
+        }
 
         public async Task<bool> DeleteFornecedor(string codigo)
         {
@@ -65,37 +96,5 @@ namespace UrbanFarming.Data.Repositories
                 throw new Exception($"Ocorreu um erro: {ex.Message}");
             }
         }
-
-        public async Task<bool> PutFornecedor(Fornecedores fornecedor)
-        {
-            try
-            {
-                var existingFornecedor = await _context.Fornecedores.FindAsync(fornecedor.Codigo);
-
-                if (existingFornecedor == null)
-                {
-                    return false; 
-                }
-
-                existingFornecedor.Codigo = fornecedor.Codigo;
-                existingFornecedor.RazaoSocial = fornecedor.RazaoSocial;
-                existingFornecedor.NomeFantasia = fornecedor.NomeFantasia;
-                existingFornecedor.CNPJ = fornecedor.CNPJ;
-                existingFornecedor.PaisOrigem = fornecedor.PaisOrigem;
-                existingFornecedor.Email = fornecedor.Email;
-                existingFornecedor.EnquadramentoEstadual = fornecedor.EnquadramentoEstadual;
-                existingFornecedor.RamoAtividade = fornecedor.RamoAtividade;
-                existingFornecedor.PessoaJuridica = fornecedor.PessoaJuridica;
-                existingFornecedor.PessoaFisica = fornecedor.PessoaFisica;
-                await _context.SaveChangesAsync();
-
-                return true; 
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Ocorreu um erro: {ex.Message}");
-            }
-        }
-
     }
 }

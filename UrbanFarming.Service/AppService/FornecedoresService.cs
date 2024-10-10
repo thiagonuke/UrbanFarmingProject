@@ -43,8 +43,8 @@ namespace UrbanFarming.Service.AppService
 
         public async Task<bool> PutFornecedor(Fornecedores fornecedor)
         {
-            var existingFornecedor = await _fornecedoresRepository.GetByCodigo(fornecedor.Codigo);
-            if (existingFornecedor == null)
+            var fornecedorExiste = await _fornecedoresRepository.GetByCodigo(fornecedor.Codigo);
+            if (fornecedorExiste == null)
             {
                 throw new NotFoundException("Produto não encontrado.");
             }
@@ -54,8 +54,8 @@ namespace UrbanFarming.Service.AppService
 
         public async Task<bool> DeleteFornecedor(string codigo)
         {
-            var existingFornecedor = await _fornecedoresRepository.GetByCodigo(codigo);
-            if (existingFornecedor == null)
+            var fornecedorExiste = await _fornecedoresRepository.GetByCodigo(codigo);
+            if (fornecedorExiste == null)
             {
                 throw new NotFoundException("Produto não encontrado.");
             }

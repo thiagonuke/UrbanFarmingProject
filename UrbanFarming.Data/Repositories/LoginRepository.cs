@@ -38,6 +38,52 @@ namespace UrbanFarming.Data.Repositories
             {
                 return false;
             }
+        }      
+
+        public async Task<bool> PutUsuario(Login usuario)
+        {
+            try
+            {
+                var usuarioExistente = await _context.Login.FirstOrDefaultAsync(u => u.Email == usuario.Email);
+
+                if (usuarioExistente == null)
+                {
+                    return false;
+                }
+
+                usuarioExistente.Email = usuario.Email;
+                usuarioExistente.Senha = usuario.Senha;
+                usuarioExistente.Nome = usuario.Nome;
+                usuarioExistente.Administrador = usuario.Administrador;
+                await _context.SaveChangesAsync();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Ocorreu um erro: {ex.Message}");
+            }
+        }
+
+        public async Task<bool> DeleteUsuario(string email)
+        {
+            try
+            {
+                var usuario = await _context.Fornecedores.FindAsync(email);
+
+                if (usuario == null)
+                    return false;
+
+                _context.Fornecedores.Remove(usuario);
+
+                await _context.SaveChangesAsync();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Ocorreu um erro: {ex.Message}");
+            }
         }
     }
 }

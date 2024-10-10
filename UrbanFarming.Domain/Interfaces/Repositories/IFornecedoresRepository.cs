@@ -7,7 +7,7 @@ namespace UrbanFarming.Domain.Interfaces.Repositories
         Task<Fornecedores> GetByCodigo(string codigo);
         Task<List<Fornecedores>> GetAllFornecedores();
         Task<bool> PostFornecedor(Fornecedores fornecedor);
-        Task<bool> DeleteFornecedor(string codigo);
         Task<bool> PutFornecedor(Fornecedores fornecedor);
+        Task<bool> DeleteFornecedor(string codigo);
     }
 }

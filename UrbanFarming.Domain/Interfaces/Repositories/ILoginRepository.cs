@@ -6,5 +6,7 @@ namespace UrbanFarming.Domain.Interfaces.Repositories
     {
         Task<Login> GetByEmail(string email);
         Task<bool> PostUsuario(Login usuario);
+        Task<bool> PutUsuario(Login usuario);
+        Task<bool> DeleteUsuario(string email);
     }
 }
