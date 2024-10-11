@@ -1,0 +1,84 @@
+﻿
+<style>
+
+    .container {
+        margin-top:5vh;
+        width: 100%;
+    }
+
+    h1, hr {
+        margin-bottom: 20px;
+        color:white;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 12px;
+        color:white;
+        border: 1px solid #ddd;
+        text-align: center;
+        background-color: rgb(44, 56, 64);
+    }
+
+    
+</style>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background-color: seagreen;">
+    <div class="container">
+        <h1>Pedidos Feitos</h1>
+        <hr />
+        <table id="tabelaPedidos" class="shadow-lg">
+            <thead>
+                <tr>
+                    <th>Código do Pedido</th>
+                    <th>Valor Total</th>
+                    <th>Usuário</th>
+                    <th>Data</th>
+                    <th>ID Item</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
+
+
+<script>
+    const pedidos = [
+        { CodigoPedido: 101, ValorTotal: 250.75, Usuario: 'usuario1', Data: '2024-10-10', IdItem: 1 },
+        { CodigoPedido: 102, ValorTotal: 150.00, Usuario: 'usuario2', Data: '2024-10-11', IdItem: 2 },
+        { CodigoPedido: 103, ValorTotal: 320.50, Usuario: 'usuario3', Data: '2024-10-12', IdItem: 3 },
+        { CodigoPedido: 104, ValorTotal: 99.99, Usuario: 'usuario4', Data: '2024-10-13', IdItem: 4 }
+    ];
+
+    function carregarPedidos() {
+        const tabela = document.querySelector("#tabelaPedidos tbody");
+        pedidos.forEach(pedido => {
+            const linha = document.createElement("tr");
+
+            linha.innerHTML = `
+                <td>${pedido.CodigoPedido}</td>
+                <td>R$ ${pedido.ValorTotal.toFixed(2)}</td>
+                <td>${pedido.Usuario}</td>
+                <td>${pedido.Data}</td>
+                <td>${pedido.IdItem}</td>
+            `;
+
+            tabela.appendChild(linha);
+        });
+    }
+
+    window.onload = carregarPedidos;
+</script>
