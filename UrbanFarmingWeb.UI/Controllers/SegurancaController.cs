@@ -32,7 +32,7 @@ namespace UrbanFarmingWeb.UI.Controllers
 			if (dados.Email != null) {
 
 
-				HttpContext.Session.Set<User>("USER", dados);
+				HttpContext.Session.Set<Login>("USER", dados);
 
 				retorno = "Success: Logado!";
 

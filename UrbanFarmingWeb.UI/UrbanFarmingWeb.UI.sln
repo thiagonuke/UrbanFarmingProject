@@ -5,15 +5,17 @@ VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrbanFarmingWeb.UI", "UrbanFarmingWeb.UI.csproj", "{C226B9F8-8240-4487-90F9-A07EE3A65BFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrbanFarmingAPI", "..\UrbanFarmingAPI\UrbanFarmingAPI.csproj", "{5CEF75B8-F4E5-48D8-AD79-49BD7D78BBA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrbanFarmingAPI", "..\UrbanFarmingAPI\UrbanFarmingAPI.csproj", "{5CEF75B8-F4E5-48D8-AD79-49BD7D78BBA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrbanFarmingDesktop.UI", "..\UrbanFarmingDesktop.UI\UrbanFarmingDesktop.UI.csproj", "{74872CAD-A0E6-4498-9143-68D349BA0BC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrbanFarmingDesktop.UI", "..\UrbanFarmingDesktop.UI\UrbanFarmingDesktop.UI.csproj", "{74872CAD-A0E6-4498-9143-68D349BA0BC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrbanFarming.Service", "..\UrbanFarming.Service\UrbanFarming.Service.csproj", "{5652DA5B-4846-403E-B3B0-9591FBF577A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrbanFarming.Service", "..\UrbanFarming.Service\UrbanFarming.Service.csproj", "{5652DA5B-4846-403E-B3B0-9591FBF577A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrbanFarming.Domain", "..\UrbanFarming.Domain\UrbanFarming.Domain.csproj", "{EF2B155E-87B1-4B27-93A5-0459715DCB63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrbanFarming.Domain", "..\UrbanFarming.Domain\UrbanFarming.Domain.csproj", "{EF2B155E-87B1-4B27-93A5-0459715DCB63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrbanFarming.Data", "..\UrbanFarming.Data\UrbanFarming.Data.csproj", "{531C74E4-B078-47AE-AE18-DBD4CD276E44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrbanFarming.Data", "..\UrbanFarming.Data\UrbanFarming.Data.csproj", "{531C74E4-B078-47AE-AE18-DBD4CD276E44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrbanFarming.Mobile", "..\UrbanFarming.Mobile\UrbanFarming.Mobile.csproj", "{90B1F2C9-E25A-4E40-AE5E-32C8718B62C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,12 @@ Global
 		{531C74E4-B078-47AE-AE18-DBD4CD276E44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{531C74E4-B078-47AE-AE18-DBD4CD276E44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{531C74E4-B078-47AE-AE18-DBD4CD276E44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90B1F2C9-E25A-4E40-AE5E-32C8718B62C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90B1F2C9-E25A-4E40-AE5E-32C8718B62C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90B1F2C9-E25A-4E40-AE5E-32C8718B62C5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{90B1F2C9-E25A-4E40-AE5E-32C8718B62C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90B1F2C9-E25A-4E40-AE5E-32C8718B62C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90B1F2C9-E25A-4E40-AE5E-32C8718B62C5}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

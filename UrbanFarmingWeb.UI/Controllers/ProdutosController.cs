@@ -18,12 +18,26 @@ namespace UrbanFarmingWeb.UI.Controllers
         {
             if (HttpContext.Session.Get<User>("USER") != null)
             {
-                ViewBag.Name = HttpContext.Session.Get<User>("USER").Nome;
+                ViewBag.Name = HttpContext.Session.Get<Login>("USER").Nome;
+
+                ViewBag.Adm = HttpContext.Session.Get<Login>("USER").Administrador;  
             }
 
             var produtos = _request.ListaProdutos().Result;
 
             return View(produtos);
+        }
+
+        public IActionResult Cadastrar([FromBody] Produtos produto)
+        {
+            if (ModelState.IsValid)
+            {
+                var cadastro = _request.EfetuarCadastradoProduto(produto).Result;
+
+                return Ok(new { message = "Produto cadastrado com sucesso!" });
+            }
+
+            return BadRequest("Erro ao cadastrar o produto.");
         }
     }
 }
