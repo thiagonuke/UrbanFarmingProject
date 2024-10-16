@@ -33,7 +33,7 @@ namespace UrbanFarmingWeb.UI.Controllers
             string response = string.Empty;
 
           
-                var responseAPI = _request.EfetuarCadastradoFornecedor(fornecedor);
+             _request.EfetuarCadastradoFornecedor(fornecedor);
 
 
             return Json(response);

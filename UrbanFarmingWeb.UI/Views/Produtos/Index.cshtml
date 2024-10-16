@@ -216,7 +216,7 @@
         <h2>Carrinho</h2>
         <ul class="cart-items"></ul>
         <p>Total: <span class="total-price">R$ 0.00</span></p>
-        <button class="checkout-btn">Finalizar Compra</button>
+        <button class="checkout-btn" id="checkout-btn">Finalizar Compra</button>
     </aside>
 
     <!-- Modal de Cadastro de Produto -->
@@ -253,12 +253,15 @@
 
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/toastr@2.1.4/toastr.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/toastr@2.1.4/build/toastr.min.css" rel="stylesheet">
 
 <script>
     const cart = document.querySelector('.cart');
     const openCartBtn = document.querySelector('.open-cart-btn');
     const closeCartBtn = document.querySelector('.close-cart-btn');
+    
+    const checkoutbtn = document.querySelector('#checkout-btn');
     const cartItemsList = document.querySelector('.cart-items');
     const totalPriceElement = document.querySelector('.total-price');
     const addToCartButtons = document.querySelectorAll('.product-card button');
@@ -271,6 +274,12 @@
     });
 
     closeCartBtn.addEventListener('click', () => {
+        cart.classList.remove('open');
+    });
+    
+    
+    checkoutbtn.addEventListener('click', () => {
+        toastr.success("Compra Finalizada com sucesso!")
         cart.classList.remove('open');
     });
 

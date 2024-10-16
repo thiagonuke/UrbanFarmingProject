@@ -147,7 +147,7 @@
                 method: "POST",
                 data: JSON.stringify({
                     Codigo: $('#inputCodigo').val(),
-                    RazaoSocial: pessoaJuridica ? $('#inputRazaoSocial').val() : null,
+                    RazaoSocial: pessoaJuridica ? $('#inputRazaoSocial').val() : $("#inputNome").val(),
                     NomeFantasia: pessoaJuridica ? $('#inputNomeFantasia').val() : null,
                     CNPJ: pessoaJuridica ? $('#inputCNPJ').val() : null,
                     CPF: pessoaFisica ? $('#inputCPF').val() : null,
