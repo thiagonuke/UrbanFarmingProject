@@ -9,51 +9,51 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UrbanFarmingWeb.UI
 build_property.RootNamespace = UrbanFarmingWeb.UI
-build_property.ProjectDir = C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingWeb.UI\
+build_property.ProjectDir = E:\Projeto\UrbanFarmingProject\UrbanFarmingWeb.UI\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarmingWeb.UI
+build_property.MSBuildProjectDirectory = E:\Projeto\UrbanFarmingProject\UrbanFarmingWeb.UI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/ProjetosAgosto/Urban/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/Fornecedor/Index.cshtml]
+[E:/Projeto/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/Fornecedor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosAgosto/Urban/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/Home/Index.cshtml]
+[E:/Projeto/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosAgosto/Urban/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/Menu/Index.cshtml]
+[E:/Projeto/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/Menu/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosAgosto/Urban/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/Pedidos/Index.cshtml]
+[E:/Projeto/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/Pedidos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosAgosto/Urban/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/Produtos/Index.cshtml]
+[E:/Projeto/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/Produtos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosAgosto/Urban/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/Shared/Error.cshtml]
+[E:/Projeto/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosAgosto/Urban/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Projeto/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosAgosto/Urban/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/_ViewImports.cshtml]
+[E:/Projeto/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosAgosto/Urban/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/_ViewStart.cshtml]
+[E:/Projeto/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjetosAgosto/Urban/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/Shared/_Layout.cshtml]
+[E:/Projeto/UrbanFarmingProject/UrbanFarmingWeb.UI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2pejd8wsld
