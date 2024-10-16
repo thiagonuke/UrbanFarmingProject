@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UrbanFarming.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc8187deb64e0ec44b53f86cfadf96a3e5252ca9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cddc0b55503248c4a602db92cd9ad48d99581ab9")]
 [assembly: System.Reflection.AssemblyProductAttribute("UrbanFarming.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UrbanFarming.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
