@@ -17,30 +17,30 @@ namespace UrbanFarmingAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CadastrarProduto([FromBody] Pedidos produto)
+        public async Task<IActionResult> CadastrarPedido([FromBody] Pedido pedido)
         {
-            if (produto == null)
+            if (pedido == null || pedido.Itens == null || pedido.Itens.Count == 0)
             {
-                return BadRequest(new { mensagem = "Produto inválido." });
+                return BadRequest(new { mensagem = "Pedido inválido." });
             }
 
-            var sucesso = await _PedidosService.PostProduto(produto);
+            var sucesso = await _PedidosService.PostPedido(pedido);
 
             if (!sucesso)
             {
-                return BadRequest(new { mensagem = "Não foi possível cadastrar o produto." });
+                return BadRequest(new { mensagem = "Não foi possível cadastrar o pedido." });
             }
 
-            return Ok(new { mensagem = "Produto cadastrado com sucesso." });
+            return Ok(new { mensagem = "Pedido cadastrado com sucesso." });
         }
 
         [HttpGet("{codigo}")]
-        public async Task<IActionResult> GetByCodigo(string codigo)
+        public async Task<IActionResult> GetByCodigo(int codigo) 
         {
             try
             {
-                var produto = await _PedidosService.GetByCodigo(codigo);
-                return Ok(produto);
+                var pedido = await _PedidosService.GetByCodigo(codigo);
+                return Ok(pedido);
             }
             catch (NotFoundException ex)
             {
@@ -51,39 +51,39 @@ namespace UrbanFarmingAPI.Controllers
         [HttpGet("GetAllPedidos")]
         public async Task<IActionResult> GetAllPedidos()
         {
-            var Pedidos = await _PedidosService.GetAllPedidos();
-            return Ok(Pedidos);
+            var pedidos = await _PedidosService.GetAllPedidos();
+            return Ok(pedidos);
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateProduto([FromBody] Pedidos produto)
+        public async Task<IActionResult> UpdatePedido([FromBody] Pedido pedido)
         {
-            if (produto == null || string.IsNullOrWhiteSpace(produto.Codigo))
+            if (pedido == null || pedido.CodigoPedido <= 0) 
             {
-                return BadRequest(new { mensagem = "Produto inválido." });
+                return BadRequest(new { mensagem = "Pedido inválido." });
             }
 
-            var sucesso = await _PedidosService.PutProduto(produto);
+            var sucesso = await _PedidosService.PutPedido(pedido);
 
             if (!sucesso)
             {
-                return NotFound(new { mensagem = "Produto não encontrado." });
+                return NotFound(new { mensagem = "Pedido não encontrado." });
             }
 
-            return Ok(new { mensagem = "Produto atualizado com sucesso." });
+            return Ok(new { mensagem = "Pedido atualizado com sucesso." });
         }
 
         [HttpDelete("{codigo}")]
-        public async Task<IActionResult> DeleteProduto(string codigo)
+        public async Task<IActionResult> DeletePedido(int codigo) 
         {
-            var sucesso = await _PedidosService.DeleteProduto(codigo);
+            var sucesso = await _PedidosService.DeletePedido(codigo);
 
             if (!sucesso)
             {
-                return NotFound(new { mensagem = "Produto não encontrado." });
+                return NotFound(new { mensagem = "Pedido não encontrado." });
             }
 
-            return Ok(new { mensagem = "Produto deletado com sucesso." });
+            return Ok(new { mensagem = "Pedido deletado com sucesso." });
         }
     }
 }

@@ -25,6 +25,6 @@ namespace UrbanFarming.Data.Context
         public DbSet<Produtos> Produtos { get; set; }
         public DbSet<Fornecedores> Fornecedores { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
-        public DbSet<ItensPedidoMap> ItensPedidoMaps { get; set; }
+        public DbSet<ItemPedido> ItensPedido { get; set; } 
     }
 }

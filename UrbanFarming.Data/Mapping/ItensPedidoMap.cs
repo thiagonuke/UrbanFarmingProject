@@ -47,3 +47,4 @@ namespace UrbanFarming.Data.Mapping
                 .HasColumnType("decimal(10, 2)");
         }
     }
+}

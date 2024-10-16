@@ -12,6 +12,7 @@ namespace UrbanFarming.IoC.Modules
             services.AddTransient<ILoginRepository, LoginRepository>();
             services.AddTransient<IProdutosRepository, ProdutosRepository>();
             services.AddTransient<IFornecedoresRepository, FornecedoresRepository>();
+            services.AddTransient<IPedidosRepository, PedidosRepository>();
         }
     }
 }
