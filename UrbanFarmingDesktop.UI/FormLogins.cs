@@ -1,8 +1,10 @@
+﻿using System.Windows.Forms;
+
 namespace UrbanFarmingDesktop.UI
 {
-    public partial class Form1 : Form
+    public partial class FormLogins : Form
     {
-        public Form1()
+        public FormLogins()
         {
             InitializeComponent();
         }

@@ -30,6 +30,7 @@ E:\Projeto\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.D
 E:\Projeto\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\refint\UrbanFarming.Data.dll
 E:\Projeto\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.pdb
 E:\Projeto\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\ref\UrbanFarming.Data.dll
+<<<<<<< HEAD
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Data\bin\Debug\net8.0\UrbanFarming.Data.deps.json
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Data\bin\Debug\net8.0\UrbanFarming.Data.dll
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Data\bin\Debug\net8.0\UrbanFarming.Data.pdb
@@ -46,3 +47,21 @@ E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\Urba
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\refint\UrbanFarming.Data.dll
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.pdb
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\ref\UrbanFarming.Data.dll
+=======
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Data\bin\Debug\net8.0\UrbanFarming.Data.deps.json
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Data\bin\Debug\net8.0\UrbanFarming.Data.dll
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Data\bin\Debug\net8.0\UrbanFarming.Data.pdb
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Data\bin\Debug\net8.0\UrbanFarming.Domain.dll
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Data\bin\Debug\net8.0\UrbanFarming.Domain.pdb
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.csproj.AssemblyReference.cache
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.AssemblyInfoInputs.cache
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.AssemblyInfo.cs
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.csproj.CoreCompileInputs.cache
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.sourcelink.json
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFar.605C4CD5.Up2Date
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.dll
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\refint\UrbanFarming.Data.dll
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\UrbanFarming.Data.pdb
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Data\obj\Debug\net8.0\ref\UrbanFarming.Data.dll
+>>>>>>> 24e1290ab3ac2190183e97642828600d17fd5fdf

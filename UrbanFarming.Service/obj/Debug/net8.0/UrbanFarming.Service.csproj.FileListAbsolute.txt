@@ -30,6 +30,7 @@ E:\Projeto\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarmin
 E:\Projeto\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\refint\UrbanFarming.Service.dll
 E:\Projeto\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.pdb
 E:\Projeto\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\ref\UrbanFarming.Service.dll
+<<<<<<< HEAD
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Service.deps.json
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Service.dll
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Service.pdb
@@ -46,3 +47,21 @@ E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\U
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\refint\UrbanFarming.Service.dll
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.pdb
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\ref\UrbanFarming.Service.dll
+=======
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Service.deps.json
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Service.dll
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Service.pdb
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Domain.dll
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Domain.pdb
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.csproj.AssemblyReference.cache
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.AssemblyInfoInputs.cache
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.AssemblyInfo.cs
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.csproj.CoreCompileInputs.cache
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.sourcelink.json
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFar.A40D540A.Up2Date
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.dll
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\refint\UrbanFarming.Service.dll
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.pdb
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\ref\UrbanFarming.Service.dll
+>>>>>>> 24e1290ab3ac2190183e97642828600d17fd5fdf

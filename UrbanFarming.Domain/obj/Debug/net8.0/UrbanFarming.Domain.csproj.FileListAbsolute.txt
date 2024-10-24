@@ -22,6 +22,7 @@ C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0
 C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\refint\UrbanFarming.Domain.dll
 C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\UrbanFarming.Domain.pdb
 C:\ProjetosAgosto\Urban\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\ref\UrbanFarming.Domain.dll
+<<<<<<< HEAD
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Domain\bin\Debug\net8.0\UrbanFarming.Domain.deps.json
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Domain\bin\Debug\net8.0\UrbanFarming.Domain.dll
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Domain\bin\Debug\net8.0\UrbanFarming.Domain.pdb
@@ -35,3 +36,17 @@ E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\re
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\UrbanFarming.Domain.pdb
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\ref\UrbanFarming.Domain.dll
 E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\UrbanFarming.Domain.csproj.AssemblyReference.cache
+=======
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Domain\bin\Debug\net8.0\UrbanFarming.Domain.deps.json
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Domain\bin\Debug\net8.0\UrbanFarming.Domain.dll
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Domain\bin\Debug\net8.0\UrbanFarming.Domain.pdb
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\UrbanFarming.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\UrbanFarming.Domain.AssemblyInfoInputs.cache
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\UrbanFarming.Domain.AssemblyInfo.cs
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\UrbanFarming.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\UrbanFarming.Domain.sourcelink.json
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\UrbanFarming.Domain.dll
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\refint\UrbanFarming.Domain.dll
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\UrbanFarming.Domain.pdb
+C:\Projetos\Urban\UrbanFarmingProject\UrbanFarming.Domain\obj\Debug\net8.0\ref\UrbanFarming.Domain.dll
+>>>>>>> 24e1290ab3ac2190183e97642828600d17fd5fdf
