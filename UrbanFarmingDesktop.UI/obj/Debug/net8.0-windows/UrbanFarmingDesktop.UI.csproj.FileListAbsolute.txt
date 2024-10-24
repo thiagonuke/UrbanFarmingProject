@@ -32,3 +32,20 @@ E:\Projeto\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\r
 E:\Projeto\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.pdb
 E:\Projeto\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.genruntimeconfig.cache
 E:\Projeto\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\ref\UrbanFarmingDesktop.UI.dll
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\bin\Debug\net8.0-windows\UrbanFarmingDesktop.UI.exe
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\bin\Debug\net8.0-windows\UrbanFarmingDesktop.UI.deps.json
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\bin\Debug\net8.0-windows\UrbanFarmingDesktop.UI.runtimeconfig.json
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\bin\Debug\net8.0-windows\UrbanFarmingDesktop.UI.dll
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\bin\Debug\net8.0-windows\UrbanFarmingDesktop.UI.pdb
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.Form1.resources
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.csproj.GenerateResource.cache
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.AssemblyInfoInputs.cache
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.AssemblyInfo.cs
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.csproj.CoreCompileInputs.cache
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.sourcelink.json
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.dll
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\refint\UrbanFarmingDesktop.UI.dll
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.pdb
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\UrbanFarmingDesktop.UI.genruntimeconfig.cache
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarmingDesktop.UI\obj\Debug\net8.0-windows\ref\UrbanFarmingDesktop.UI.dll

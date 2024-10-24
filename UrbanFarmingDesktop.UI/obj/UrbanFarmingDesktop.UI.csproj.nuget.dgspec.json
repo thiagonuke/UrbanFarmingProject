@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingDesktop.UI\\UrbanFarmingDesktop.UI.csproj": {}
+    "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarmingDesktop.UI\\UrbanFarmingDesktop.UI.csproj": {}
   },
   "projects": {
-    "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingDesktop.UI\\UrbanFarmingDesktop.UI.csproj": {
+    "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarmingDesktop.UI\\UrbanFarmingDesktop.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingDesktop.UI\\UrbanFarmingDesktop.UI.csproj",
+        "projectUniqueName": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarmingDesktop.UI\\UrbanFarmingDesktop.UI.csproj",
         "projectName": "UrbanFarmingDesktop.UI",
-        "projectPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingDesktop.UI\\UrbanFarmingDesktop.UI.csproj",
+        "projectPath": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarmingDesktop.UI\\UrbanFarmingDesktop.UI.csproj",
         "packagesPath": "C:\\Users\\mthia\\.nuget\\packages\\",
-        "outputPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingDesktop.UI\\obj\\",
+        "outputPath": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarmingDesktop.UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,11 +39,22 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -63,7 +74,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

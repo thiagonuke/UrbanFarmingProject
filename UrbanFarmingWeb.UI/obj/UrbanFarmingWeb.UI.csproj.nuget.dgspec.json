@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\UrbanFarmingWeb.UI.csproj": {}
+    "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\UrbanFarmingWeb.UI.csproj": {}
   },
   "projects": {
-    "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj": {
+    "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj",
+        "projectUniqueName": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj",
         "projectName": "UrbanFarming.Domain",
-        "projectPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj",
+        "projectPath": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj",
         "packagesPath": "C:\\Users\\mthia\\.nuget\\packages\\",
-        "outputPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Domain\\obj\\",
+        "outputPath": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarming.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,11 +39,22 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -60,18 +71,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\UrbanFarmingWeb.UI.csproj": {
+    "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\UrbanFarmingWeb.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\UrbanFarmingWeb.UI.csproj",
+        "projectUniqueName": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\UrbanFarmingWeb.UI.csproj",
         "projectName": "UrbanFarmingWeb.UI",
-        "projectPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\UrbanFarmingWeb.UI.csproj",
+        "projectPath": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\UrbanFarmingWeb.UI.csproj",
         "packagesPath": "C:\\Users\\mthia\\.nuget\\packages\\",
-        "outputPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\obj\\",
+        "outputPath": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarmingWeb.UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,8 +104,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj": {
-                "projectPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj"
+              "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj": {
+                "projectPath": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj"
               }
             }
           }
@@ -103,11 +114,22 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -127,7 +149,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

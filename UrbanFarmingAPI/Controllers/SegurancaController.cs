@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using UrbanFarming.Domain.Classes;
 using UrbanFarming.Domain.Interfaces.Services;
 
@@ -9,6 +10,11 @@ namespace UrbanFarmingAPI.Controllers
     [ApiController]
     public class SegurancaController : ControllerBase
     {
+        [HttpGet("testeapi")]
+        public async Task<IActionResult> testeapi(Login usuario, [FromServices] ILoginService loginService)
+            => Ok(JsonConvert.SerializeObject("teste"));
+
+
         [HttpPost("CadastrarUsuario")]
         public async Task<IActionResult> CadastrarUsuario(Login usuario, [FromServices] ILoginService loginService)
             => Ok(await loginService.CadastrarUsuario(usuario));

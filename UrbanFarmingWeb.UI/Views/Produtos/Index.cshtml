@@ -204,6 +204,7 @@
             <div class="product-card d-flex flex-column justify-content-around shadow-lg">
                 <img src="@prod.LinkImagem">
                 <h2>@prod.Nome</h2>
+                <p>@prod.Codigo</p>
                 <span>@prod.Descricao</span>
                 <h4><b>R$ @prod.Valor</b></h4> 
                 <button>Adicionar ao Carrinho</button>
@@ -216,7 +217,7 @@
         <h2>Carrinho</h2>
         <ul class="cart-items"></ul>
         <p>Total: <span class="total-price">R$ 0.00</span></p>
-        <button class="checkout-btn" id="checkout-btn">Finalizar Compra</button>
+        <button class="checkout-btn" id="checkout-btn" onclick="FinalizarPedidos()">Finalizar Compra</button>
     </aside>
 
     <!-- Modal de Cadastro de Produto -->
@@ -283,13 +284,14 @@
         cart.classList.remove('open');
     });
 
-    function addToCart(itemName, itemPrice) {
+    function addToCart(itemName, itemPrice, productCod) {
+        debugger
         const existingItem = cartItems.find(item => item.name === itemName);
 
         if (existingItem) {
             existingItem.quantity++;
         } else {
-            cartItems.push({ name: itemName, price: itemPrice, quantity: 1 });
+            cartItems.push({ name: itemName, price: itemPrice, quantity: 1, Codigo: productCod });
         }
 
         total += itemPrice;
@@ -380,8 +382,46 @@
             const productCard = e.target.closest('.product-card');
             const productName = productCard.querySelector('h2').textContent;
             const productPrice = parseFloat(productCard.querySelector('h4 b').textContent.replace('R$', '').trim()); 
+            const productCod = productCard.querySelector('p').textContent;
 
-            addToCart(productName, productPrice);
+            addToCart(productName, productPrice, productCod);
         });
+
+
     });
+
+    function FinalizarPedidos() {
+        debugger
+
+        const pedido = {
+            CodigoPedido: 0, 
+            ValorTotal: total, 
+            Usuario: '"@ViewData["Nome"]"',
+            Data: new Date().toISOString(), 
+            Itens: cartItems.map(item => ({
+                IdItem: 0, 
+                CodigoPedido: 0,
+                NomeProduto: item.name,
+                CodigoProduto: item.Codigo, 
+                Quantidade: item.quantity,
+                ValorUnitario: item.price
+            }))
+        };
+
+        $.ajax({
+            url: '/Pedidos/CadastrarPedidos', 
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(pedido),
+            success: function (response) {
+                toastr.success('Pedido cadastrado com sucesso!');
+                cartItems = [];
+                updateCartUI(); 
+            },
+            error: function (xhr, status, error) {
+                toastr.error('Erro ao finalizar pedido: ' + error);
+            }
+        });
+    }
+
 </script>

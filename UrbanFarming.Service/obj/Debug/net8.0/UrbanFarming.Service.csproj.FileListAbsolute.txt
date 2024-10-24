@@ -30,3 +30,19 @@ E:\Projeto\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarmin
 E:\Projeto\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\refint\UrbanFarming.Service.dll
 E:\Projeto\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.pdb
 E:\Projeto\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\ref\UrbanFarming.Service.dll
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Service.deps.json
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Service.dll
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Service.pdb
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Domain.dll
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\bin\Debug\net8.0\UrbanFarming.Domain.pdb
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.csproj.AssemblyReference.cache
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.AssemblyInfoInputs.cache
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.AssemblyInfo.cs
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.csproj.CoreCompileInputs.cache
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.sourcelink.json
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFar.A40D540A.Up2Date
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.dll
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\refint\UrbanFarming.Service.dll
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\UrbanFarming.Service.pdb
+E:\Projeto\new urban\UrbanFarmingProject\UrbanFarming.Service\obj\Debug\net8.0\ref\UrbanFarming.Service.dll

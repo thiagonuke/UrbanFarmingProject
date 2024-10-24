@@ -16,7 +16,7 @@ namespace UrbanFarming.Data.Mapping
             modelBuilder.Entity<Pedido>()
                 .Property(p => p.CodigoPedido)
                 .HasColumnName("CodigoPedido")
-                .IsRequired();
+                .ValueGeneratedOnAdd();
 
             modelBuilder.Entity<Pedido>()
                 .Property(p => p.ValorTotal)
@@ -36,9 +36,7 @@ namespace UrbanFarming.Data.Mapping
                 .IsRequired();
 
             modelBuilder.Entity<Pedido>()
-                .HasMany(p => p.Itens)
-                .WithOne(i => i.Pedido)
-                .HasForeignKey(i => i.CodigoPedido);
+                .HasMany(p => p.Itens);
         }
     }
 }

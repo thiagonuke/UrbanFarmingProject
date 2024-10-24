@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMobileUrban.Views.AboutPage"
+             xmlns:vm="clr-namespace:AppMobileUrban.ViewModels"
+             BackgroundColor="Green"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+                <Label Text="{Binding Name, StringFormat='Bem-vindo {0}!'}" FontSize="Title" TextColor="White"/>
+                <BoxView HeightRequest="1" BackgroundColor="White" HorizontalOptions="FillAndExpand" />
+
+                <!--<Button Text="Carrinho" Command="{Binding CarrinhoCommand}" />-->
+
+                <CollectionView ItemsSource="{Binding Items}" Margin="0,10,0,0">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" Span="2" />
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="10">
+                                <Image Source="carrinho_pr.jpeg" HeightRequest="100" WidthRequest="100" Aspect="AspectFit" />
+                                <Label Text="{Binding Nome}" FontSize="Medium" TextColor="White" />
+                                <Label Text="{Binding Descricao}" FontSize="Small" TextColor="White" />
+                                <Label Text="{Binding Valor, StringFormat='Preço: {0:C}'}" FontSize="Small" TextColor="White" />
+                                <Button Text="Adicionar ao Carrinho" BackgroundColor="Black" Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.AdicionarAoCarrinhoCommand}" CommandParameter="{Binding}" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

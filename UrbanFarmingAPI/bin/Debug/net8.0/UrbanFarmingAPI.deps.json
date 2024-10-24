@@ -590,23 +590,37 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.0-rc.1.24451.1",
           "Microsoft.EntityFrameworkCore.Relational": "9.0.0-rc.1.24451.1",
+          "Newtonsoft.Json": "13.0.3",
           "UrbanFarming.Domain": "1.0.0"
         },
         "runtime": {
-          "UrbanFarming.Data.dll": {}
+          "UrbanFarming.Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "UrbanFarming.Domain/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
         "runtime": {
-          "UrbanFarming.Domain.dll": {}
+          "UrbanFarming.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "UrbanFarming.Service/1.0.0": {
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "UrbanFarming.Domain": "1.0.0"
         },
         "runtime": {
-          "UrbanFarming.Service.dll": {}
+          "UrbanFarming.Service.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

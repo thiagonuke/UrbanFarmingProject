@@ -16,7 +16,8 @@ namespace UrbanFarming.Data.Mapping
             modelBuilder.Entity<ItemPedido>()
                 .Property(i => i.IdItem)
                 .HasColumnName("IdItem")
-                .IsRequired();
+                .IsRequired()
+                .ValueGeneratedOnAdd();
 
             modelBuilder.Entity<ItemPedido>()
                 .Property(i => i.CodigoPedido)

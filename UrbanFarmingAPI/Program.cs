@@ -16,7 +16,6 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<UrbanContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("Conn"));
-    opt.UseLazyLoadingProxies();
 });
 
 builder.Services.StartRegisterServices();

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMobileUrban.Views.FornecedorPage"
+             xmlns:vm="clr-namespace:AppMobileUrban.ViewModels"
+             BackgroundColor="Green">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20">
+
+                <!-- Título do formulário -->
+                <Label Text="Cadastro de Fornecedor"
+                       TextColor="White"
+                       FontSize="Large"
+                       HorizontalOptions="Center" />
+                <BoxView HeightRequest="1" BackgroundColor="White" HorizontalOptions="FillAndExpand" />
+
+                <!-- Campo Código -->
+                <Label Text="Código" FontAttributes="Bold" TextColor="White" />
+                <Entry Placeholder="Digite o Código"
+                       TextColor="White"
+                       PlaceholderColor="white"
+                       Keyboard="Numeric"
+                       x:Name="CodigoEntry" />
+
+                <!-- Campo CNPJ -->
+                <Label Text="CNPJ" FontAttributes="Bold" TextColor="White" />
+                <Entry Placeholder="Digite o CNPJ"
+                       TextColor="White"
+                       PlaceholderColor="white"
+                       Keyboard="Numeric"
+                       x:Name="CnpjEntry" />
+
+                <!-- Campo Razão Social -->
+                <Label Text="Razão Social" FontAttributes="Bold" TextColor="White" />
+                <Entry Placeholder="Digite a Razão Social"
+                       TextColor="White"
+                       PlaceholderColor="white"
+                       x:Name="RazaoSocialEntry" />
+
+                <!-- Campo Nome Fantasia -->
+                <Label Text="Nome Fantasia" FontAttributes="Bold" TextColor="White" />
+                <Entry Placeholder="Digite o Nome Fantasia"
+                       TextColor="White"
+                       PlaceholderColor="white"
+                       x:Name="NomeFantasiaEntry" />
+
+                <!-- Campo Enquadramento Estadual -->
+                <Label Text="Enquadramento Estadual" FontAttributes="Bold" TextColor="White" />
+                <Entry Placeholder="Digite o Enquadramento Estadual"
+                       TextColor="White"
+                       PlaceholderColor="white"
+                       x:Name="EnquadramentoEntry" />
+
+                <!-- Campo Email -->
+                <Label Text="Email" FontAttributes="Bold" TextColor="White" />
+                <Entry Placeholder="Digite o Email"
+                       TextColor="White"
+                       PlaceholderColor="white"
+                       Keyboard="Email"
+                       x:Name="EmailEntry" />
+
+                <!-- Campo Telefone -->
+                <Label Text="Telefone" FontAttributes="Bold" TextColor="White" />
+                <Entry Placeholder="Digite o Telefone"
+                       TextColor="White"
+                       PlaceholderColor="white"
+                       Keyboard="Telephone"
+                       x:Name="TelefoneEntry" />
+
+                <!-- Campo Endereço -->
+                <Label Text="Endereço" FontAttributes="Bold" TextColor="White" />
+                <Entry Placeholder="Digite o Endereço"
+                       TextColor="White"
+                       PlaceholderColor="white"
+                       x:Name="EnderecoEntry" />
+
+                <!-- Campo CEP -->
+                <Label Text="CEP" FontAttributes="Bold" TextColor="White" />
+                <Entry Placeholder="Digite o CEP"
+                       TextColor="White"
+                       PlaceholderColor="white"
+                       Keyboard="Numeric"
+                       x:Name="CepEntry" />
+
+                <!-- Campo País de Origem -->
+                <Label Text="País de Origem" FontAttributes="Bold" TextColor="White" />
+                <Entry Placeholder="Digite o País de Origem"
+                       TextColor="White"
+                       PlaceholderColor="white"
+                       x:Name="PaisOrigemEntry" />
+
+                <!-- Botão para cadastrar -->
+                <Button Text="Cadastrar"
+                        BackgroundColor="Black"
+                        TextColor="White"
+                        CornerRadius="10"
+                        HorizontalOptions="Center"
+                        Clicked="OnCadastrarClicked" />
+                <!-- Evento do botão -->
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

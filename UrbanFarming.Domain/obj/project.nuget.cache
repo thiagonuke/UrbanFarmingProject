@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QQ9TCBVgpa4p6FjwUKFISyxoIo1XcygkhTMF1IQAIJ3GEX3nOxTPr9Mh1+Zx+DvBi/nvwiOcCDBNr7VOKwWztg==",
+  "dgSpecHash": "SXVio/I78lI=",
   "success": true,
-  "projectFilePath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mthia\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

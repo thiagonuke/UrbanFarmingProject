@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8fxqUIY6d4V8bZk+YjSb8au4wmgW9OveZn8Zc3LOajvH5vGMl1/4sJTAQD0Lob0RWVb/uHNtoocRUT22z7Di1A==",
+  "dgSpecHash": "dxf9KGExSmU=",
   "success": true,
-  "projectFilePath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj",
+  "projectFilePath": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mthia\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\mthia\\.nuget\\packages\\azure.identity\\1.11.3\\azure.identity.1.11.3.nupkg.sha512",

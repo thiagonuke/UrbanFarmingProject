@@ -958,6 +958,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.0-rc.1.24451.1",
           "Microsoft.EntityFrameworkCore.Relational": "9.0.0-rc.1.24451.1",
+          "Newtonsoft.Json": "13.0.3",
           "UrbanFarming.Domain": "1.0.0"
         },
         "compile": {
@@ -970,6 +971,9 @@
       "UrbanFarming.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
         "compile": {
           "bin/placeholder/UrbanFarming.Domain.dll": {}
         },
@@ -981,6 +985,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "UrbanFarming.Domain": "1.0.0"
         },
         "compile": {
@@ -2901,11 +2906,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj",
+      "projectUniqueName": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj",
       "projectName": "UrbanFarmingAPI",
-      "projectPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj",
+      "projectPath": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarmingAPI\\UrbanFarmingAPI.csproj",
       "packagesPath": "C:\\Users\\mthia\\.nuget\\packages\\",
-      "outputPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarmingAPI\\obj\\",
+      "outputPath": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarmingAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2927,14 +2932,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Data\\UrbanFarming.Data.csproj": {
-              "projectPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Data\\UrbanFarming.Data.csproj"
+            "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarming.Data\\UrbanFarming.Data.csproj": {
+              "projectPath": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarming.Data\\UrbanFarming.Data.csproj"
             },
-            "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj": {
-              "projectPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj"
+            "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj": {
+              "projectPath": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarming.Domain\\UrbanFarming.Domain.csproj"
             },
-            "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Service\\UrbanFarming.Service.csproj": {
-              "projectPath": "E:\\Projeto\\UrbanFarmingProject\\UrbanFarming.Service\\UrbanFarming.Service.csproj"
+            "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarming.Service\\UrbanFarming.Service.csproj": {
+              "projectPath": "E:\\Projeto\\new urban\\UrbanFarmingProject\\UrbanFarming.Service\\UrbanFarming.Service.csproj"
             }
           }
         }
@@ -2943,6 +2948,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2989,7 +2999,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

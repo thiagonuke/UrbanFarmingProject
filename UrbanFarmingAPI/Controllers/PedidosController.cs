@@ -16,7 +16,7 @@ namespace UrbanFarmingAPI.Controllers
             _PedidosService = PedidosService;
         }
 
-        [HttpPost]
+        [HttpPost("CadastrarPedido")]
         public async Task<IActionResult> CadastrarPedido([FromBody] Pedido pedido)
         {
             if (pedido == null || pedido.Itens == null || pedido.Itens.Count == 0)

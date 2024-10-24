@@ -10,7 +10,7 @@ namespace UrbanFarmingWeb.UI.Request
 		
 			_httpClient = httpClient;
 
-			_httpClient.BaseAddress = new Uri("https://localhost:44308");
+			_httpClient.BaseAddress = new Uri("http://localhost:5152");
 		
 		}
 
@@ -18,7 +18,9 @@ namespace UrbanFarmingWeb.UI.Request
 		public async Task<HttpResponseMessage> EfetuarCadastrado(Login dados) => _httpClient.PostAsJsonAsync<Login>($"/api/Seguranca/CadastrarUsuario", dados).Result;
         public async Task<HttpResponseMessage> EfetuarCadastradoFornecedor(Fornecedores dados) => _httpClient.PostAsJsonAsync<Fornecedores>("/api/Fornecedores", dados).Result;
         public async Task<HttpResponseMessage> EfetuarCadastradoProduto(Produtos dados) => _httpClient.PostAsJsonAsync<Produtos>("/api/Produtos", dados).Result;
+        public async Task<HttpResponseMessage> EfetuarCadastradoPedido(Pedido dados) =>  _httpClient.PostAsJsonAsync<Pedido>("/api/Pedidos/CadastrarPedido", dados).Result;
         public async Task<List<Produtos>> ListaProdutos()=> await _httpClient.GetAsync("/api/Produtos/GetAllProdutos").Result.Content.ReadFromJsonAsync<List<Produtos>>();
+        public async Task<List<Pedido>> ListaPedidos()=> await _httpClient.GetAsync("/api/Pedidos/GetAllPedidos").Result.Content.ReadFromJsonAsync<List<Pedido>>();
        
     }
 }

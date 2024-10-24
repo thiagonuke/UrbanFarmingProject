@@ -32,7 +32,7 @@ namespace UrbanFarming.Data.Repositories
         {
             try
             {
-                await _context.Pedidos.AddAsync(pedido);
+                await _context.Pedidos.AddAsync(pedido); 
                 await _context.SaveChangesAsync();
 
                 return true;
