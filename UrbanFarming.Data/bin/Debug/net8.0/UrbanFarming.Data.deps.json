@@ -162,7 +162,10 @@
       },
       "UrbanFarming.Domain/1.0.0": {
         "runtime": {
-          "UrbanFarming.Domain.dll": {}
+          "UrbanFarming.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
